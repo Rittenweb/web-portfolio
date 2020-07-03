@@ -7,16 +7,21 @@ const Header = ({ siteTitle }) => (
     style={{
       background: `rebeccapurple`,
       marginBottom: `1.45rem`,
+      position: "fixed",
+      top: 0,
     }}
   >
     <div
       style={{
-        margin: `0 auto`,
-        maxWidth: 960,
+        display: "flex",
+        justifyContent: "space-evenly",
+        alignItems: "center",
+        width: "100vw",
         padding: `1.45rem 1.0875rem`,
+        height: "5vw",
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h2 style={{ margin: 0 }}>
         <Link
           to="/"
           style={{
@@ -24,9 +29,53 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+          GitHub
         </Link>
-      </h1>
+      </h2>
+      <h2 style={{ margin: 0 }}>
+        <Link
+          to="/"
+          style={{
+            color: `white`,
+            textDecoration: `none`,
+          }}
+        >
+          LinkedIn
+        </Link>
+      </h2>
+      <h2 style={{ margin: 0 }}>
+        <Link
+          to="/"
+          style={{
+            color: `white`,
+            textDecoration: `none`,
+          }}
+        >
+          Email
+        </Link>
+      </h2>
+      <h2 style={{ margin: 0 }}>
+        <Link
+          to="/"
+          style={{
+            color: `white`,
+            textDecoration: `none`,
+          }}
+        >
+          Phone
+        </Link>
+      </h2>
+      <h2 style={{ margin: 0 }}>
+        <Link
+          to="/"
+          style={{
+            color: `white`,
+            textDecoration: `none`,
+          }}
+        >
+          Resume
+        </Link>
+      </h2>
     </div>
   </header>
 )
