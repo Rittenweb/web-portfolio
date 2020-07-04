@@ -5,10 +5,10 @@ import React from "react"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
+      background: `#3053ab`,
       position: "fixed",
       top: 0,
+      zIndex: 2,
     }}
   >
     <div
@@ -17,53 +17,30 @@ const Header = ({ siteTitle }) => (
         justifyContent: "space-evenly",
         alignItems: "center",
         width: "100vw",
-        padding: `1.45rem 1.0875rem`,
         height: "5vw",
       }}
     >
       <h2 style={{ margin: 0 }}>
-        <Link
-          to="/"
+        <a
+          href="https://github.com/Rittenweb"
           style={{
             color: `white`,
             textDecoration: `none`,
           }}
         >
           GitHub
-        </Link>
+        </a>
       </h2>
       <h2 style={{ margin: 0 }}>
-        <Link
-          to="/"
+        <a
+          href="https://www.linkedin.com/in/bennett-winters-18a0024a/"
           style={{
             color: `white`,
             textDecoration: `none`,
           }}
         >
           LinkedIn
-        </Link>
-      </h2>
-      <h2 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          Email
-        </Link>
-      </h2>
-      <h2 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          Phone
-        </Link>
+        </a>
       </h2>
       <h2 style={{ margin: 0 }}>
         <Link
