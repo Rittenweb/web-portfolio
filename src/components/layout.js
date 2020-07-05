@@ -8,10 +8,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import BackgroundImage from "./backgroundimage"
-import Background from "./background"
-
-import Header from "./header"
+import BackgroundSmall from "./backgroundsmall"
+import BackgroundMoving from "./backgroundmoving"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -37,17 +35,15 @@ const Layout = ({ children }) => {
         <main style={{ marginTop: `10vw`, position: "relative" }}>
           {children}
         </main>
-        <footer>
+        {/* <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        </footer> */}
       </div>
       <div className="background"></div>
-      <BackgroundImage />
-      {/* <BackgroundImage top="53.5vw" />
-      <BackgroundImage top="102.5vw" /> */}
-      <Background />
+      {/* <BackgroundSmall /> */}
+      <BackgroundMoving />
     </>
   )
 }

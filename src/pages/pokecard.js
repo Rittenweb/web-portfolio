@@ -1,8 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
+import Buttons from "../components/buttons"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
@@ -37,29 +36,7 @@ const IndexPage = () => (
           </h3>
         </div>
       </div>
-      <div>
-        <Link to="/">
-          <div className="button">About Me</div>
-        </Link>
-        <Link to="/fairychess">
-          <div className="button">Fairy Chess</div>
-        </Link>
-        <Link to="/antiadj">
-          <div className="button">Anti-Adjective Editor</div>
-        </Link>
-        <Link to="/iclibrary">
-          <div className="button">I.C. Library Homepage</div>
-        </Link>
-        <Link to="/pokecard">
-          <div className="button">PokéCard Scrambler</div>
-        </Link>
-        <Link to="/intimpossible">
-          <div className="button">Intermediate Impossible</div>
-        </Link>
-        <Link to="/contact">
-          <div className="button">Contact Me</div>
-        </Link>
-      </div>
+      <Buttons current={"pokecard"} />
     </div>
   </Layout>
 )
