@@ -27,7 +27,6 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
           margin: "0 auto auto",
@@ -44,9 +43,10 @@ const Layout = ({ children }) => {
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
       </div>
-      <BackgroundImage top="4.5vw" />
-      <BackgroundImage top="53.5vw" />
-      <BackgroundImage top="102.5vw" />
+      <div className="background"></div>
+      <BackgroundImage />
+      {/* <BackgroundImage top="53.5vw" />
+      <BackgroundImage top="102.5vw" /> */}
       <Background />
     </>
   )

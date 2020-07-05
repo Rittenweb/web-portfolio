@@ -12,7 +12,6 @@ const IndexPage = () => (
       style={{
         display: "flex",
         justifyContent: "space-between",
-        marginBottom: "25%",
       }}
     >
       <div>
@@ -21,19 +20,30 @@ const IndexPage = () => (
         <h4>...and general Creative Type Guy</h4>
       </div>
       <div>
-        <Link to="/aboutme">
+        <Link to="/">
           <div className="button">About Me</div>
         </Link>
-        <div className="button">Skills</div>
-        <div className="button">Fairy Chess</div>
-        <div className="button">Anti-Adjective Text Editor</div>
-        <div className="button">Immaculate Conception Library Homepage</div>
-        <div className="button">PokéCard Scrambler</div>
-        <div className="button">Intermediate Impossible</div>
-        <div className="button">Contact Me</div>
+        <Link to="/fairychess">
+          <div className="button">Fairy Chess</div>
+        </Link>
+        <Link to="/antiadj">
+          <div className="button">Anti-Adjective Editor</div>
+        </Link>
+        <Link to="/iclibrary">
+          <div className="button">I.C. Library Homepage</div>
+        </Link>
+        <Link to="/pokecard">
+          <div className="button">PokéCard Scrambler</div>
+        </Link>
+        <Link to="/intimpossible">
+          <div className="button">Intermediate Impossible</div>
+        </Link>
+        <Link to="/contact">
+          <div className="button">Contact Me</div>
+        </Link>
       </div>
     </div>
-    <div style={{ marginBottom: "25%" }}>
+    <div>
       <h1>About Me</h1>
       <div>
         I have an undergraduate degree in English literature and a graduate
@@ -43,7 +53,7 @@ const IndexPage = () => (
       </div>
       <div>For now I'll just say...</div>
     </div>
-    <div style={{ marginBottom: "25%" }}>
+    <div>
       <h1>Skills</h1>
       <h2>Proficient In:</h2>
       <div style={{ display: "flex" }}>
@@ -65,133 +75,6 @@ const IndexPage = () => (
         <div className="skill">SVG</div>
         <div className="skill">Node.js</div>
       </div>
-    </div>
-    <h1>Fairy Chess</h1>
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "space-between",
-        marginBottom: "25%",
-      }}
-    >
-      <div className="video-wrapper">
-        <iframe
-          src="https://www.youtube.com/embed/Zhawgd0REhA"
-          frameBorder="0"
-          allowFullScreen
-        ></iframe>
-      </div>
-      <div>
-        <h3>Challenge: Large, complex and inter-dependent state objects</h3>
-        <h3>
-          Solution: a single useReducer and app-wide dispatch with useContext
-        </h3>
-      </div>
-    </div>
-    <h1>Anti-Adjective Text Editor</h1>
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "space-between",
-        marginBottom: "25%",
-      }}
-    >
-      <div className="video-wrapper">
-        <iframe
-          src="https://www.youtube.com/embed/Zhawgd0REhA"
-          frameBorder="0"
-          allowFullScreen
-        ></iframe>
-      </div>
-      <div>
-        <h3>Challenge: Large, complex and inter-dependent state objects</h3>
-        <h3>
-          Solution: a single useReducer and app-wide dispatch with useContext
-        </h3>
-      </div>
-    </div>
-    <h1>Immaculate Conception Library Homepage</h1>
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "space-between",
-        marginBottom: "25%",
-      }}
-    >
-      <div className="video-wrapper">
-        <iframe
-          src="https://www.youtube.com/embed/Zhawgd0REhA"
-          frameBorder="0"
-          allowFullScreen
-        ></iframe>
-      </div>
-      <div>
-        <h3>Challenge: Large, complex and inter-dependent state objects</h3>
-        <h3>
-          Solution: a single useReducer and app-wide dispatch with useContext
-        </h3>
-      </div>
-    </div>
-    <h1>PokéCard Scrambler</h1>
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "space-between",
-        marginBottom: "25%",
-      }}
-    >
-      <div className="video-wrapper">
-        <iframe
-          src="https://www.youtube.com/embed/Zhawgd0REhA"
-          frameBorder="0"
-          allowFullScreen
-        ></iframe>
-      </div>
-      <div>
-        <h3>Challenge: Large, complex and inter-dependent state objects</h3>
-        <h3>
-          Solution: a single useReducer and app-wide dispatch with useContext
-        </h3>
-      </div>
-    </div>
-    <h1>Intermediate Impossible</h1>
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "space-between",
-        marginBottom: "25%",
-      }}
-    >
-      <div className="video-wrapper">
-        <iframe
-          src="https://www.youtube.com/embed/Zhawgd0REhA"
-          frameBorder="0"
-          allowFullScreen
-        ></iframe>
-      </div>
-      <div>
-        <h3>Challenge: Large, complex and inter-dependent state objects</h3>
-        <h3>
-          Solution: a single useReducer and app-wide dispatch with useContext
-        </h3>
-      </div>
-    </div>
-    <div>
-      <h1>Contact Me</h1>
-      <form className="contact-form">
-        <div>
-          <div>
-            <input type="text" name="user_name" placeholder="Your Name" />
-          </div>
-          <div>
-            <input type="email" name="user_email" placeholder="Your Email" />
-          </div>
-        </div>
-        <div className="message">
-          <textarea name="message" placeholder="Your Message"></textarea>
-        </div>
-        <input type="submit" value="SEND >>" className="send" />
-      </form>
     </div>
   </Layout>
 )

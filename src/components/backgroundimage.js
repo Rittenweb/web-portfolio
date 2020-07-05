@@ -13,33 +13,19 @@ import Img from "gatsby-image"
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const BackgroundImage = ({ top }) => {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "stone.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1600) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
-
+const BackgroundImage = () => {
   return (
     <div
+      className="background"
       style={{
         position: "fixed",
-        top: top,
-        left: "5%",
-        height: "95vh",
-        minHeight: "95vh",
-        width: "90%",
+        top: "4vw",
+        left: "5vw",
+        height: "calc(100vh - 8vw)",
+        width: "90vw",
         zIndex: -1,
       }}
-    >
-      <Img fluid={data.placeholderImage.childImageSharp.fluid} />
-    </div>
+    ></div>
   )
 }
 

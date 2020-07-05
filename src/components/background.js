@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
@@ -15,33 +15,14 @@ export default function Background() {
     }
   `)
 
-  const [hasTurbulence, setHasTurbulence] = useState(false)
-  const handleScroll = function handleScroll() {
-    if (hasTurbulence) {
-      return
-    }
-    setHasTurbulence(true)
-    setTimeout(() => {
-      setHasTurbulence(false)
-    }, 200)
-  }
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll)
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll)
-    }
-  }, [])
-
   return (
     <div
       style={{
         position: "fixed",
-        width: "100vw",
-        height: "100vh",
-        top: 0,
-        left: 0,
+        width: "110vw",
+        minHeight: "100vh",
+        top: "-10vw",
+        left: "-10vw",
         zIndex: -2,
         filter: "url(#turbulence)",
       }}
@@ -50,14 +31,14 @@ export default function Background() {
       <svg>
         <filter id="turbulence" x="0" y="0" width="100%" height="100%">
           <feTurbulence
-            id="sea-filter"
+            id="ripple-filter"
             numOctaves="3"
             seed="2"
             baseFrequency="0.02 0.05"
           ></feTurbulence>
           <feDisplacementMap scale="20" in="SourceGraphic"></feDisplacementMap>
           <animate
-            href="#sea-filter"
+            href="#ripple-filter"
             attributeName="baseFrequency"
             dur="60s"
             keyTimes="0;0.5;1"

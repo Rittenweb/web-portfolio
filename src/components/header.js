@@ -19,41 +19,7 @@ const Header = ({ siteTitle }) => (
         width: "100vw",
         height: "4.5vw",
       }}
-    >
-      <h2 style={{ margin: 0 }}>
-        <a
-          href="https://github.com/Rittenweb"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          GitHub
-        </a>
-      </h2>
-      <h2 style={{ margin: 0 }}>
-        <a
-          href="https://www.linkedin.com/in/bennett-winters-18a0024a/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          LinkedIn
-        </a>
-      </h2>
-      <h2 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          Resume
-        </Link>
-      </h2>
-    </div>
+    ></div>
   </header>
 )
 
