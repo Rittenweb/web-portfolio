@@ -21,7 +21,9 @@ const IndexPage = () => (
         <h4>...and general Creative Type Guy</h4>
       </div>
       <div>
-        <div className="button">About Me</div>
+        <Link to="/aboutme">
+          <div className="button">About Me</div>
+        </Link>
         <div className="button">Skills</div>
         <div className="button">Fairy Chess</div>
         <div className="button">Anti-Adjective Text Editor</div>

@@ -9,6 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import BackgroundImage from "./backgroundimage"
+import Background from "./background"
 
 import Header from "./header"
 import "./layout.css"
@@ -46,6 +47,7 @@ const Layout = ({ children }) => {
       <BackgroundImage top="4.5vw" />
       <BackgroundImage top="53.5vw" />
       <BackgroundImage top="102.5vw" />
+      <Background />
     </>
   )
 }
