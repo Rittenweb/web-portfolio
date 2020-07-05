@@ -43,7 +43,9 @@ const Layout = ({ children }) => {
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
       </div>
-      <BackgroundImage />
+      <BackgroundImage top="4.5vw" />
+      <BackgroundImage top="53.5vw" />
+      <BackgroundImage top="102.5vw" />
     </>
   )
 }

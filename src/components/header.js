@@ -17,7 +17,7 @@ const Header = ({ siteTitle }) => (
         justifyContent: "space-evenly",
         alignItems: "center",
         width: "100vw",
-        height: "5vw",
+        height: "4.5vw",
       }}
     >
       <h2 style={{ margin: 0 }}>
