@@ -1,44 +1,30 @@
 import React from "react"
-import Buttons from "../components/buttons"
-
+import Buttons from "../components/buttons.js"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Project from "../components/project"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "space-between",
-        marginBottom: "25%",
-      }}
-    >
-      <h1>PokéCard Scrambler</h1>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          marginBottom: "25%",
-        }}
-      >
-        <div className="video-wrapper">
-          <iframe
-            src="https://www.youtube.com/embed/Zhawgd0REhA"
-            frameBorder="0"
-            allowFullScreen
-          ></iframe>
-        </div>
-        <div>
-          <h3>Challenge: Large, complex and inter-dependent state objects</h3>
-          <h3>
-            Solution: a single useReducer and app-wide dispatch with useContext
-          </h3>
-        </div>
-      </div>
+const PokecardPage = function () {
+  let text = [
+    [
+      "Challenge: Large, complex and inter-dependent state objects",
+      "Solution: a single useReducer and app-wide dispatch with useContext",
+    ],
+  ]
+
+  return (
+    <Layout>
+      <SEO title="PokéCard Scrambler" />
+
+      <Project
+        title="PokéCard Scrambler"
+        link="https://www.youtube.com/embed/Zhawgd0REhA"
+        source="http://google.com"
+        text={text}
+      />
       <Buttons current={"pokecard"} />
-    </div>
-  </Layout>
-)
+    </Layout>
+  )
+}
 
-export default IndexPage
+export default PokecardPage

@@ -25,22 +25,29 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <div
+      <main
         style={{
-          margin: "0 auto auto",
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
+          display: "flex",
+          alignItems: "center",
+          height: "100vh",
+          width: "100vw",
         }}
       >
-        <main style={{ marginTop: `10vw`, position: "relative" }}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
           {children}
-        </main>
-        {/* <footer>
+        </div>
+      </main>
+      {/* <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer> */}
-      </div>
       <div className="background"></div>
       {/* <BackgroundSmall /> */}
       <BackgroundMoving />

@@ -18,6 +18,8 @@ const IndexPage = () => (
         <h1>Bennett Winters</h1>
         <h4>I'm a self-taught Front-End Developer</h4>
         <h4>...and general Creative Type Guy</h4>
+        <h4>Here's my resume</h4>
+        <h4>Check out my projects:</h4>
       </div>
       <Buttons current={""} />
     </div>
