@@ -1,10 +1,9 @@
 import React from "react"
-import { Link } from "gatsby"
 import Button from "./button"
 
 export default function Buttons({ current }) {
   return (
-    <div>
+    <div style={{ maxWidth: "28vw" }}>
       {current !== "" && <Button to="/" text="Home" imgOffset={-4} />}
       {current !== "about" && (
         <Button to="/about" text="About Me" imgOffset={-3} />
@@ -34,14 +33,14 @@ export default function Buttons({ current }) {
       <svg style={{ position: "fixed" }}>
         <filter id="lesserturbulence" x="0" y="0" width="100%" height="100%">
           <feTurbulence
-            id="ripple-filter"
+            id="ripple-filter-lesser"
             numOctaves="3"
             seed="2"
             baseFrequency="0.02 0.05"
           ></feTurbulence>
           <feDisplacementMap scale="12" in="SourceGraphic"></feDisplacementMap>
           <animate
-            href="#ripple-filter"
+            href="#ripple-filter-lesser"
             attributeName="baseFrequency"
             dur="60s"
             keyTimes="0;0.5;1"

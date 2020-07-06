@@ -18,8 +18,9 @@ const IclibraryPage = function () {
 
       <Project
         title="Immaculate Conception Library Homepage"
-        link="https://www.youtube.com/embed/Zhawgd0REhA"
+        video="https://www.youtube.com/embed/Zhawgd0REhA"
         source="http://google.com"
+        live="http://google.com"
         text={text}
       />
       <Buttons current={"iclibrary"} />

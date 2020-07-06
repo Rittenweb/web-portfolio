@@ -38,6 +38,7 @@ const Layout = ({ children }) => {
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
+            width: "100vw",
           }}
         >
           {children}

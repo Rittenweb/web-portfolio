@@ -7,8 +7,12 @@ import Project from "../components/project"
 const FairychessPage = function () {
   let text = [
     [
-      "Challenge: Large, complex and inter-dependent state objects",
-      "Solution: a single useReducer and app-wide dispatch with useContext",
+      "Large, complex and inter-dependent state objects",
+      "A single useReducer and app-wide dispatch with useContext",
+    ],
+    [
+      "ReactDnD too slow for desired UX",
+      "Own drag and drop implementation atop of HTML5 API",
     ],
   ]
 
@@ -18,8 +22,9 @@ const FairychessPage = function () {
 
       <Project
         title="Fairy Chess"
-        link="https://www.youtube.com/embed/Zhawgd0REhA"
+        video="https://www.youtube.com/embed/Zhawgd0REhA"
         source="http://google.com"
+        live="http://google.com"
         text={text}
       />
       <Buttons current={"fairychess"} />

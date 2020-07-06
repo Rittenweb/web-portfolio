@@ -18,8 +18,9 @@ const PokecardPage = function () {
 
       <Project
         title="PokéCard Scrambler"
-        link="https://www.youtube.com/embed/Zhawgd0REhA"
+        video="https://www.youtube.com/embed/Zhawgd0REhA"
         source="http://google.com"
+        live="http://google.com"
         text={text}
       />
       <Buttons current={"pokecard"} />
