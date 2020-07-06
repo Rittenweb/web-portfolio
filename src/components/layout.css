@@ -1,3 +1,18 @@
+:root {
+  --imgScaleRatio: 20px;
+}
+
+@media (max-width: 1000px) {
+  :root {
+    --imgScaleRatio: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --imgScaleRatio: 4px;
+  }
+}
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;

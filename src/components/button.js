@@ -46,7 +46,7 @@ export default function Button({ to, text, imgOffset }) {
             fluid={data.placeholderImage.childImageSharp.fluid}
             style={{
               width: "105%",
-              transform: `translate(-5px, ${imgOffset * 25}px)`,
+              transform: `translate(-5px, calc(${imgOffset} * var(--imgScaleRatio))`,
             }}
           />
         </div>

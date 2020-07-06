@@ -31,7 +31,7 @@ export default function Buttons({ current }) {
       {current !== "contact" && (
         <Button to="/contact" text="Contact Me" imgOffset={3} />
       )}
-      <svg>
+      <svg style={{ position: "fixed" }}>
         <filter id="lesserturbulence" x="0" y="0" width="100%" height="100%">
           <feTurbulence
             id="ripple-filter"
