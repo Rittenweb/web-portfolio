@@ -1,49 +1,55 @@
 import React from "react"
 import { Link } from "gatsby"
+import Button from "./button"
 
-export default function buttons({ current }) {
+export default function Buttons({ current }) {
   return (
     <div>
-      {current !== "" && (
-        <Link to="/">
-          <div className="button">Home</div>
-        </Link>
-      )}
+      {current !== "" && <Button to="/" text="Home" imgOffset={-4} />}
       {current !== "about" && (
-        <Link to="/about">
-          <div className="button">About Me</div>
-        </Link>
+        <Button to="/about" text="About Me" imgOffset={-3} />
       )}
       {current !== "fairychess" && (
-        <Link to="/fairychess">
-          <div className="button">Fairy Chess</div>
-        </Link>
+        <Button to="/fairychess" text="Fairy Chess" imgOffset={-2} />
       )}
       {current !== "antiadj" && (
-        <Link to="/antiadj">
-          <div className="button">Anti-Adjective Editor</div>
-        </Link>
+        <Button to="/antiadj" text="Anti-Adjective Editor" imgOffset={-1} />
       )}
       {current !== "iclibrary" && (
-        <Link to="/iclibrary">
-          <div className="button">I.C. Library Homepage</div>
-        </Link>
+        <Button to="/iclibrary" text="I.C. Library Homepage" imgOffset={0} />
       )}
       {current !== "pokecard" && (
-        <Link to="/pokecard">
-          <div className="button">PokéCard Scrambler</div>
-        </Link>
+        <Button to="/pokecard" text="PokéCard Scrambler" imgOffset={1} />
       )}
       {current !== "intimpossible" && (
-        <Link to="/intimpossible">
-          <div className="button">Intermediate Impossible</div>
-        </Link>
+        <Button
+          to="/intimpossible"
+          text="Intermediate Impossible"
+          imgOffset={2}
+        />
       )}
       {current !== "contact" && (
-        <Link to="/contact">
-          <div className="button">Contact Me</div>
-        </Link>
+        <Button to="/contact" text="Contact Me" imgOffset={3} />
       )}
+      <svg>
+        <filter id="lesserturbulence" x="0" y="0" width="100%" height="100%">
+          <feTurbulence
+            id="ripple-filter"
+            numOctaves="3"
+            seed="2"
+            baseFrequency="0.02 0.05"
+          ></feTurbulence>
+          <feDisplacementMap scale="12" in="SourceGraphic"></feDisplacementMap>
+          <animate
+            href="#ripple-filter"
+            attributeName="baseFrequency"
+            dur="60s"
+            keyTimes="0;0.5;1"
+            values="0.02 0.06;0.04 0.08;0.02 0.06"
+            repeatCount="indefinite"
+          />
+        </filter>
+      </svg>
     </div>
   )
 }
