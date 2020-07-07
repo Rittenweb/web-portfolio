@@ -22,9 +22,10 @@ const ContactPage = () => (
           method="post"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
+          action="/thanks"
         >
+          <input type="hidden" name="form-name" value="contact" />
           <h3>Or, send me a message here, and I'll email you back!</h3>
-
           <div style={{ display: "flex", justifyContent: "space-between" }}>
             <input
               type="text"
@@ -44,7 +45,9 @@ const ContactPage = () => (
             placeholder="Your Message"
             className="contact-input contact-message"
           ></textarea>
-          <button className="contact-send">Send</button>
+          <button type="submit" className="contact-send">
+            Send
+          </button>
         </form>
       </div>
     </div>
