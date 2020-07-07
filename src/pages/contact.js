@@ -1,64 +1,50 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/layout"
 import Buttons from "../components/buttons"
 import SEO from "../components/seo"
+import PdfImage from "../components/pdfImage"
 
 const ContactPage = () => (
   <Layout>
     <SEO title="Bennett Winters: Contact Info" />
     <div>
-      <div>
-        <h2 style={{ margin: 0 }}>
-          <a
-            href="https://github.com/Rittenweb"
-            style={{
-              color: `white`,
-              textDecoration: `none`,
-            }}
-          >
-            GitHub
-          </a>
-        </h2>
-        <h2 style={{ margin: 0 }}>
-          <a
-            href="https://www.linkedin.com/in/bennett-winters-18a0024a/"
-            style={{
-              color: `white`,
-              textDecoration: `none`,
-            }}
-          >
-            LinkedIn
-          </a>
-        </h2>
-        <h2 style={{ margin: 0 }}>
-          <Link
-            to="/"
-            style={{
-              color: `white`,
-              textDecoration: `none`,
-            }}
-          >
-            Resume
-          </Link>
-        </h2>
-      </div>
-      <div>
+      <div className="contact-block">
         <h1>Contact Me</h1>
-        <form className="contact-form">
-          <div>
-            <div>
-              <input type="text" name="user_name" placeholder="Your Name" />
-            </div>
-            <div>
-              <input type="email" name="user_email" placeholder="Your Email" />
-            </div>
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <h3 style={{ margin: "0 40px 0 0" }}>
+            My email and phone are on my resume:
+          </h3>
+          <PdfImage />
+        </div>
+        <form
+          className="contact-form"
+          name="contact"
+          method="post"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+        >
+          <h3>Or, send me a message here, and I'll email you back!</h3>
+
+          <div style={{ display: "flex", justifyContent: "space-between" }}>
+            <input
+              type="text"
+              name="user_name"
+              placeholder="Your Name"
+              className="contact-input"
+            />
+            <input
+              type="email"
+              name="user_email"
+              placeholder="Your Email"
+              className="contact-input"
+            />
           </div>
-          <div className="message">
-            <textarea name="message" placeholder="Your Message"></textarea>
-          </div>
-          <input type="submit" value="SEND >>" className="send" />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            className="contact-input contact-message"
+          ></textarea>
+          <input type="submit" value="SEND >>" className="contact-send" />
         </form>
       </div>
     </div>
