@@ -14,7 +14,7 @@ const IntimpossiblePage = function () {
 
   return (
     <Layout>
-      <SEO title="Intermediate Impossible" />
+      <SEO title="Bennett Winters: Intermediate Impossible" />
 
       <Project
         title="Intermediate Impossible"
@@ -23,7 +23,7 @@ const IntimpossiblePage = function () {
         live="http://google.com"
         text={text}
       />
-      <Buttons current={"intimpossible"} />
+      <Buttons current={"intimpossible"} isBig={false} />
     </Layout>
   )
 }

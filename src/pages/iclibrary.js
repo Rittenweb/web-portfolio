@@ -14,7 +14,7 @@ const IclibraryPage = function () {
 
   return (
     <Layout>
-      <SEO title="I.C. Library Homepage" />
+      <SEO title="Bennett Winters: I.C. Library" />
 
       <Project
         title="Immaculate Conception Library Homepage"
@@ -23,7 +23,7 @@ const IclibraryPage = function () {
         live="http://google.com"
         text={text}
       />
-      <Buttons current={"iclibrary"} />
+      <Buttons current={"iclibrary"} isBig={false} />
     </Layout>
   )
 }

@@ -639,10 +639,25 @@ pre tt:after {
 
 /* MY CLASSES */
 
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.buttons-small {
+  width: 28vw;
+  height: 60vh;
+}
+
+.buttons-big {
+  width: 36vw;
+  height: 75vh;
+}
+
 .button {
-  width: 26vw;
-  height: 50px;
-  margin: 10px;
+  width: 97.5%;
+  height: 100%;
   background: linear-gradient(
     90deg,
     rgba(48, 83, 171, 1) 0%,
@@ -678,6 +693,11 @@ pre tt:after {
   display: flex;
   align-items: center;
   padding-left: 10px;
+}
+
+.home-block {
+  margin-left: 10vw;
+  height: 70vh;
 }
 
 .skill {

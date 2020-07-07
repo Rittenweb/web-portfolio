@@ -14,7 +14,7 @@ const PokecardPage = function () {
 
   return (
     <Layout>
-      <SEO title="PokéCard Scrambler" />
+      <SEO title="Bennett Winters: PokéCard Scrambler" />
 
       <Project
         title="PokéCard Scrambler"
@@ -23,7 +23,7 @@ const PokecardPage = function () {
         live="http://google.com"
         text={text}
       />
-      <Buttons current={"pokecard"} />
+      <Buttons current={"pokecard"} isBig={false} />
     </Layout>
   )
 }

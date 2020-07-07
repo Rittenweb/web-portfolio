@@ -14,7 +14,7 @@ const AntiadjPage = function () {
 
   return (
     <Layout>
-      <SEO title="Anti Adjective Editor" />
+      <SEO title="Bennett Winters: Anti-Adjective" />
 
       <Project
         title="Anti-Adjective Text Editor"
@@ -23,7 +23,7 @@ const AntiadjPage = function () {
         live="http://google.com"
         text={text}
       />
-      <Buttons current={"antiadj"} />
+      <Buttons current={"antiadj"} isBig={false} />
     </Layout>
   )
 }

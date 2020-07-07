@@ -26,7 +26,7 @@ export default function Button({ to, text, imgOffset }) {
   }
 
   return (
-    <Link to={to}>
+    <Link to={to} style={{ height: "12.5%" }}>
       <div
         className="button"
         onMouseEnter={handleMouseEnter}
@@ -45,8 +45,8 @@ export default function Button({ to, text, imgOffset }) {
           <Img
             fluid={data.placeholderImage.childImageSharp.fluid}
             style={{
-              width: "105%",
-              transform: `translate(-5px, calc(${imgOffset} * var(--imgScaleRatio))`,
+              width: "110%",
+              transform: `translate(-10px, calc(${imgOffset} * var(--imgScaleRatio))`,
             }}
           />
         </div>

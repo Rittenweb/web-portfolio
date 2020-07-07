@@ -1,9 +1,9 @@
 import React from "react"
 import Button from "./button"
 
-export default function Buttons({ current }) {
+export default function Buttons({ current, isBig }) {
   return (
-    <div style={{ maxWidth: "28vw" }}>
+    <div className={isBig ? "buttons buttons-big" : "buttons buttons-small"}>
       {current !== "" && <Button to="/" text="Home" imgOffset={-4} />}
       {current !== "about" && (
         <Button to="/about" text="About Me" imgOffset={-3} />
@@ -30,7 +30,7 @@ export default function Buttons({ current }) {
       {current !== "contact" && (
         <Button to="/contact" text="Contact Me" imgOffset={3} />
       )}
-      <svg style={{ position: "fixed" }}>
+      <svg style={{ position: "fixed", zIndex: -2 }}>
         <filter id="lesserturbulence" x="0" y="0" width="100%" height="100%">
           <feTurbulence
             id="ripple-filter-lesser"

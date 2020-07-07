@@ -1,20 +1,8 @@
 import React from "react"
 import Img from "gatsby-image"
-import { useStaticQuery, graphql } from "gatsby"
+import GitHubImageSmall from "./githubImageSmall"
 
 export default function Project({ title, video, source, live, text }) {
-  const data = useStaticQuery(graphql`
-    query {
-      iconImage: file(relativePath: { eq: "GitHub-Mark-32px.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 32) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
-
   return (
     <>
       <div className="video-block">
@@ -22,10 +10,7 @@ export default function Project({ title, video, source, live, text }) {
           {title}
           <div>
             <a href={source}>
-              <Img
-                fluid={data.iconImage.childImageSharp.fluid}
-                style={{ width: "32px" }}
-              />
+              <GitHubImageSmall />
             </a>
             <a href={live} style={{ fontSize: "1rem" }}>
               Live

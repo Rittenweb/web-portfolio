@@ -18,7 +18,7 @@ const FairychessPage = function () {
 
   return (
     <Layout>
-      <SEO title="Fairy Chess" />
+      <SEO title="Bennett Winters: Fairy Chess" />
 
       <Project
         title="Fairy Chess"
@@ -27,7 +27,7 @@ const FairychessPage = function () {
         live="http://google.com"
         text={text}
       />
-      <Buttons current={"fairychess"} />
+      <Buttons current={"fairychess"} isBig={false} />
     </Layout>
   )
 }
