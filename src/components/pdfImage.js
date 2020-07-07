@@ -2,12 +2,12 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-const GitHubImageLarge = () => {
+const PdfImage = () => {
   const data = useStaticQuery(graphql`
     query {
-      theImage: file(relativePath: { eq: "GitHub-Mark-Light-120px-plus.png" }) {
+      theImage: file(relativePath: { eq: "pdf.png" }) {
         childImageSharp {
-          fluid(maxWidth: 120) {
+          fluid(maxWidth: 64) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -20,4 +20,4 @@ const GitHubImageLarge = () => {
   )
 }
 
-export default GitHubImageLarge
+export default PdfImage

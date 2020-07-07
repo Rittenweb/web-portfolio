@@ -21,12 +21,20 @@ const IndexPage = () => {
             <LinkedInImage />
           </a>
         </div>
-        <h1 style={{ fontSize: "4rem", margin: "50px 0" }}>Hi, I'm Bennett</h1>
-        <h3>I'm a self-taught Front-End Developer</h3>
-        <h3 style={{ marginBottom: "50px" }}>
-          ...and a writer, and generally a Creative Type Guy
-        </h3>
-        <h5>Check out some of my web projects! (I recommend "Fairy Chess")</h5>
+        <div style={{ margin: "30px 0" }}>
+          <h1 style={{ fontSize: "4rem", marginBottom: "40px" }}>
+            Hi, I'm Bennett
+          </h1>
+          <div>
+            <h3 style={{ marginBottom: "10px" }}>
+              I'm a self-taught Front-End Developer
+            </h3>
+            <h3>...and a writer, and generally a Creative Type Guy</h3>
+          </div>
+        </div>
+        <h5 style={{ marginBottom: "40px" }}>
+          Check out some of my web projects! (I recommend "Fairy Chess")
+        </h5>
       </div>
       <Buttons current={""} isBig={true} />
     </Layout>

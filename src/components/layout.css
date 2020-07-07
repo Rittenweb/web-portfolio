@@ -646,8 +646,8 @@ pre tt:after {
 }
 
 .buttons-small {
-  width: 28vw;
-  height: 60vh;
+  width: 26vw;
+  height: 58vh;
 }
 
 .buttons-big {
@@ -698,12 +698,32 @@ pre tt:after {
 .home-block {
   margin-left: 10vw;
   height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-block {
+  width: 55vw;
+  margin-left: 10vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-text {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
 }
 
 .skill {
-  padding: 4px;
+  padding: 6px;
   margin: 4px;
+  display: flex;
+  align-items: center;
   background-color: #3053ab;
+  font-size: 0.9rem;
 }
 
 .video-block {
