@@ -22,8 +22,8 @@ const IndexPage = () => {
           </a>
         </div>
         <div style={{ margin: "30px 0" }}>
-          <h1 style={{ fontSize: "4rem", marginBottom: "40px" }}>
-            Hi, I'm Bennett
+          <h1 style={{ fontSize: "3.6rem", marginBottom: "40px" }}>
+            Hi, I'm Bennett :)
           </h1>
           <div>
             <h3 style={{ marginBottom: "10px" }}>

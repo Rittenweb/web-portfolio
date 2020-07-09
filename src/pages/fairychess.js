@@ -6,14 +6,24 @@ import Project from "../components/project"
 
 const FairychessPage = function () {
   let text = [
+    // [
+    //   "Large, complex and inter-dependent state objects",
+    //   "A single useReducer and app-wide dispatch with useContext",
+    // ],
     [
-      "Large, complex and inter-dependent state objects",
-      "A single useReducer and app-wide dispatch with useContext",
+      `"background-attachment: fixed;" broken in Chrome with animations.`,
+      `Wrapper component that reads the element's boundingClientRect and adjusts its
+       background position to simulate a fixed position relative to viewport point (0, 0)`,
     ],
     [
-      "ReactDnD too slow for desired UX",
-      "Own drag and drop implementation atop of HTML5 API",
+      `~150 different chess pieces with precise, non-random movement algorithms`,
+      `Function that recursively recombines pieces, allowing complex pieces to be 
+      defined in the database by listing "component" pieces rather than listing all possible moves`,
     ],
+    // [
+    //   `Transition animations on components incompatible with a game-phase-based rendering pattern`,
+    //   `Dedicated transition phase on a timeout that syncs with a component fade-out animations.`,
+    // ],
   ]
 
   return (

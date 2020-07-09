@@ -639,6 +639,10 @@ pre tt:after {
 
 /* MY CLASSES */
 
+*::selection {
+  background: rgba(48, 83, 171, 1);
+}
+
 .buttons {
   display: flex;
   flex-direction: column;
@@ -746,7 +750,11 @@ pre tt:after {
   color: white;
   border: 1px solid grey;
   padding: 6px;
-  margin: 5px 0;
+  margin: 5px 0 10px 0;
+}
+
+.contact-input:focus {
+  background-color: rgba(255, 255, 255, 0.16);
 }
 
 .contact-message {
@@ -772,7 +780,7 @@ textarea:-webkit-autofill:focus {
 }
 
 .video-block {
-  background-image: url("../images/3967634.png");
+  background-color: #3053ab;
   margin-left: 2vw;
   padding: 1vw;
   max-width: 32vw;
@@ -815,8 +823,6 @@ iframe {
 
 .challenge-header {
   font-size: 1.25rem;
-  font-weight: bold;
-  font-family: sans-serif;
   color: #307aab;
 }
 
@@ -832,4 +838,39 @@ iframe {
   height: calc(100vh - 8vw);
   width: 90vw;
   z-index: -1;
+}
+
+/* F O N T S */
+
+h1 {
+  font-family: "Kodchasan", sans-serif;
+}
+
+h3 {
+  font-family: "Gayathri", "Play", sans-serif;
+}
+
+h5 {
+  font-family: "Gayathri", sans-serif;
+}
+
+.button-text {
+  font-family: "Play", "Kodchasan", sans-serif;
+  font-size: 1.1rem;
+}
+
+.video-header {
+  font-family: "Kodchasan", sans-serif;
+}
+
+.challenge-block {
+  font-family: "Gayathri", sans-serif;
+}
+
+.about-block {
+  font-family: "Gayathri", sans-serif;
+}
+
+.skill {
+  font-family: "Play", sans-serif;
 }

@@ -41,6 +41,7 @@ const AboutPage = () => (
           style={{
             display: "flex",
             flexWrap: "wrap",
+            marginRight: "40px",
           }}
         >
           <div className="skill">JavaScript</div>
