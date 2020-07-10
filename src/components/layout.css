@@ -114,15 +114,6 @@ body {
   margin-bottom: 20px;
 }
 
-.skill {
-  padding: 6px;
-  margin: 4px;
-  display: flex;
-  align-items: center;
-  background-color: #3053ab;
-  font-size: 0.9rem;
-}
-
 .contact-block {
   margin-left: 10vw;
   height: 70vh;
@@ -157,9 +148,13 @@ body {
 }
 
 .contact-send {
-  width: 16%;
+  width: 20%;
+  outline: none;
+  border: none;
   align-self: flex-end;
   margin-top: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
 input:-webkit-autofill,
@@ -216,13 +211,6 @@ iframe {
   color: #fdc606;
 }
 
-.gradient-text {
-  background: linear-gradient(90deg, #db895d, #faa434, #fdc606);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .video-block {
   background-image: linear-gradient(
     0deg,
@@ -238,22 +226,53 @@ iframe {
   /* box-shadow: 2px 2px 4px blue; */
 }
 
-.about-block h1 {
-  color: #faa434;
-}
-
 .contact-block h1 {
   color: #136dad;
 }
 
-.contact-send {
-  background-color: #136dad;
+.orange-box {
+  padding: 6px;
+  margin: 4px;
+  display: flex;
+  align-items: center;
+  border-left: 2px solid #db895d;
+  border-right: 2px solid #fdc606;
+  background: transparent;
+  border-radius: 4px;
+  background-image: linear-gradient(90deg, #db895d, #faa434, #fdc606),
+    linear-gradient(90deg, #db895d, #faa434, #fdc606);
+  background-size: 100% 2px;
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  font-family: "Play", sans-serif;
+  color: #db895d;
+  transition: color 200ms;
+  /* background: linear-gradient(40deg, #db895d, #faa434, #fdc606); */
 }
 
-.skill {
-  background: linear-gradient(40deg, #db895d, #faa434, #fdc606);
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
+.gradient-text {
+  background: linear-gradient(90deg, #db895d, #faa434, #fdc606);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.orange-button-text:hover {
+  background-size: 200% 200%;
+  animation: gradientScroll 1s ease infinite;
+}
+
+@keyframes gradientScroll {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .background {
@@ -297,12 +316,11 @@ h4 {
   font-family: "Gayathri", sans-serif;
 }
 
-.skill {
+.orange-button {
   font-family: "Play", sans-serif;
 }
 
 .contact-input,
-.contact-message,
-.contact-send {
+.contact-message {
   font-family: "Gayathri", sans-serif;
 }

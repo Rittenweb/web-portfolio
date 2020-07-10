@@ -9,7 +9,9 @@ const ContactPage = () => (
     <SEO title="Bennett Winters: Contact Info" />
     <div>
       <div className="contact-block">
-        <h1>Contact Me</h1>
+        <h1 className="gradient-text" style={{ width: "200px" }}>
+          Contact Me
+        </h1>
         <div style={{ display: "flex", alignItems: "center" }}>
           <h3 style={{ margin: "0 40px 0 0" }}>
             My email and phone are on my resume:
@@ -45,8 +47,8 @@ const ContactPage = () => (
             placeholder="Your Message"
             className="contact-input contact-message"
           ></textarea>
-          <button type="submit" className="contact-send">
-            Send
+          <button type="submit" className="contact-send orange-box">
+            <div className="gradient-text orange-button-text">{"Send >>"}</div>
           </button>
         </form>
       </div>

@@ -9,7 +9,9 @@ const AboutPage = () => (
     <SEO title="Bennett Winters: About" />
     <div className="about-block">
       <div>
-        <h1>About Me</h1>
+        <h1 className="gradient-text" style={{ width: "200px" }}>
+          About Me
+        </h1>
         <div className="about-text">
           I have an undergraduate degree in English literature and a graduate
           degree in creative writing. I've taught university-level writing in
@@ -36,7 +38,7 @@ const AboutPage = () => (
           justifyContent: "space-between",
         }}
       >
-        <h1 style={{ margin: "0 16px 0 0" }}>Skills: </h1>
+        <h1 style={{ margin: "0 16px 0 0" }}>Proficiencies: </h1>
         <div
           style={{
             display: "flex",
@@ -44,15 +46,27 @@ const AboutPage = () => (
             marginRight: "40px",
           }}
         >
-          <div className="skill">JavaScript</div>
-          <div className="skill">React</div>
-          <div className="skill">Gatsby</div>
-          <div className="skill">HTML</div>
-          <div className="skill">CSS</div>
-          <div className="skill">Jest</div>
-          <div className="skill">Node.js</div>
-          <div className="skill">GraphQL</div>
-          <div className="skill">Python (Flask)</div>
+          <div className="orange-box">
+            <div className="gradient-text">JavaScript</div>
+          </div>
+          <div className="orange-box">
+            <div className="gradient-text">React</div>
+          </div>
+          <div className="orange-box">
+            <div className="gradient-text">Gatsby</div>
+          </div>
+          <div className="orange-box">
+            <div className="gradient-text">HTML</div>
+          </div>
+          <div className="orange-box">
+            <div className="gradient-text">CSS</div>
+          </div>
+          <div className="orange-box">
+            <div className="gradient-text">GraphQL</div>
+          </div>
+          <div className="orange-box">
+            <div className="gradient-text">Jest</div>
+          </div>
         </div>
         <h1 style={{ margin: "0 16px 0 0" }}>Resume: </h1>
         <PdfImage />

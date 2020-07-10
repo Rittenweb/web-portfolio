@@ -1,5 +1,4 @@
 import React from "react"
-import Img from "gatsby-image"
 import GitHubImageSmall from "./githubImageSmall"
 
 export default function Project({ title, video, source, live, text }) {
@@ -8,12 +7,22 @@ export default function Project({ title, video, source, live, text }) {
       <div className="video-block">
         <h2 className="video-header">
           {title}
-          <div>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
             <a href={source}>
               <GitHubImageSmall />
             </a>
-            <a href={live} style={{ fontSize: "1rem" }}>
-              Live
+            <a
+              href={live}
+              style={{ width: "28px", fontSize: "1rem" }}
+              className="orange-box"
+            >
+              <div className="gradient-text orange-button-text">Live</div>
             </a>
           </div>
         </h2>
@@ -30,16 +39,41 @@ export default function Project({ title, video, source, live, text }) {
         {text.map(pair => {
           return (
             <>
-              <p className="challenge-text">
-                <span className="challenge-header">Challenge: </span>
-                {pair[0]}
-              </p>
-              <p className="challenge-text solution">
-                <span className="challenge-header solution-header">
-                  Solution:{" "}
-                </span>
-                {pair[1]}
-              </p>
+              <div style={{ display: "flex" }}>
+                <div
+                  style={{
+                    height: "5vh",
+                    minWidth: "4px",
+                    maxWidth: "4px",
+
+                    background: "linear-gradient(#db895d, #faa434, #fdc606)",
+                    marginRight: "8px",
+                    borderRadius: "4px",
+                  }}
+                ></div>
+                <div>
+                  <span className="challenge-header">Challenge: </span>
+                  {pair[0]}
+                </div>
+              </div>
+              <div style={{ display: "flex" }}>
+                <div
+                  style={{
+                    height: "10vh",
+                    minWidth: "4px",
+                    maxWidth: "4px",
+
+                    background: "linear-gradient(#db895d, #faa434, #fdc606)",
+                    marginRight: "8px",
+                    borderRadius: "4px",
+                    marginLeft: "30px",
+                  }}
+                ></div>
+                <div>
+                  <span className="solution-header">Solution: </span>
+                  {pair[1]}
+                </div>
+              </div>
             </>
           )
         })}
