@@ -41,12 +41,11 @@ export default function Project({ title, video, source, live, text }) {
             <>
               <div style={{ display: "flex" }}>
                 <div
+                  className="gradient-bar"
                   style={{
                     height: "5vh",
                     minWidth: "4px",
                     maxWidth: "4px",
-
-                    background: "linear-gradient(#db895d, #faa434, #fdc606)",
                     marginRight: "8px",
                     borderRadius: "4px",
                   }}
@@ -58,12 +57,11 @@ export default function Project({ title, video, source, live, text }) {
               </div>
               <div style={{ display: "flex" }}>
                 <div
+                  className="gradient-bar"
                   style={{
                     height: "10vh",
                     minWidth: "4px",
                     maxWidth: "4px",
-
-                    background: "linear-gradient(#db895d, #faa434, #fdc606)",
                     marginRight: "8px",
                     borderRadius: "4px",
                     marginLeft: "30px",

@@ -34,10 +34,10 @@ const IndexPage = () => {
             }}
           >
             <div
+              className="gradient-bar"
               style={{
                 height: "10vh",
                 width: "4px",
-                background: "linear-gradient(#db895d, #faa434, #fdc606)",
                 marginRight: "16px",
                 borderRadius: "2px",
               }}
@@ -52,12 +52,11 @@ const IndexPage = () => {
             >
               <h3 style={{ paddingTop: "8px" }}>
                 I'm a self-taught{" "}
-                <span style={{ color: "#FAA434" }}>Front-End Developer</span>
+                <span className="orange">Front-End Developer</span>
               </h3>
               <h3 style={{ paddingTop: "8px" }}>
-                ...and a <span style={{ color: "#DB895D" }}>writer</span>, and
-                generally a{" "}
-                <span style={{ color: "#FDC606" }}>Creative Type Guy</span>
+                ...and a <span className="red">writer</span>, and generally a{" "}
+                <span className="yellow">Creative Type Guy</span>
               </h3>
             </div>
           </div>

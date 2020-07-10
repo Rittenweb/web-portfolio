@@ -1,5 +1,10 @@
 :root {
   --imgScaleRatio: 20px;
+  --red: #d1756b;
+  --orange: #ec9759;
+  --yellow: #fdc606;
+  --darkblue: #003986;
+  --lightblue: #06a6f4;
 }
 
 @media (max-width: 1000px) {
@@ -26,14 +31,14 @@ html {
 
 body {
   color: white;
-  background-color: #3053ab;
+  background-color: var(--darkblue);
   font-family: georgia, serif;
 }
 
 /* MY CLASSES */
 
 *::selection {
-  background: rgba(48, 83, 171, 1);
+  background: var(--lightblue);
 }
 
 .buttons {
@@ -195,7 +200,7 @@ iframe {
 
 .challenge-text {
   padding-left: 6px;
-  border-left: 2px solid #db895d;
+  border-left: 2px solid var(--red);
 }
 
 .solution {
@@ -204,30 +209,20 @@ iframe {
 
 .challenge-header {
   font-size: 1.25rem;
-  color: #faa434;
+  color: var(--red);
 }
 
 .solution-header {
-  color: #fdc606;
+  color: var(--yellow);
 }
 
 .video-block {
-  background-image: linear-gradient(
-    0deg,
-    rgb(61, 103, 216),
-    rgb(65, 80, 170),
-    rgb(53, 69, 115)
-  );
-  background: linear-gradient(145deg, #003986, #06a6f4);
-  box-shadow: 10px 10px 0px #fdc606, -10px -10px 0px #db895d;
+  background: linear-gradient(145deg, var(--darkblue), var(--lightblue));
+  box-shadow: 10px 10px 0px var(--yellow), -10px -10px 0px var(--red);
   margin-left: 2vw;
   padding: 1vw;
   max-width: 32vw;
   /* box-shadow: 2px 2px 4px blue; */
-}
-
-.contact-block h1 {
-  color: #136dad;
 }
 
 .orange-box {
@@ -235,24 +230,28 @@ iframe {
   margin: 4px;
   display: flex;
   align-items: center;
-  border-left: 2px solid #db895d;
-  border-right: 2px solid #fdc606;
+  border-left: 2px solid var(--red);
+  border-right: 2px solid var(--yellow);
   background: transparent;
   border-radius: 4px;
-  background-image: linear-gradient(90deg, #db895d, #faa434, #fdc606),
-    linear-gradient(90deg, #db895d, #faa434, #fdc606);
+  background-image: linear-gradient(
+      90deg,
+      var(--red),
+      var(--orange),
+      var(--yellow)
+    ),
+    linear-gradient(90deg, var(--red), var(--orange), var(--yellow));
   background-size: 100% 2px;
   background-position: 0 0, 0 100%;
   background-repeat: no-repeat;
   text-decoration: none;
   font-family: "Play", sans-serif;
-  color: #db895d;
   transition: color 200ms;
   /* background: linear-gradient(40deg, #db895d, #faa434, #fdc606); */
 }
 
 .gradient-text {
-  background: linear-gradient(90deg, #db895d, #faa434, #fdc606);
+  background: linear-gradient(90deg, var(--red), var(--orange), var(--yellow));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -283,6 +282,22 @@ iframe {
   height: calc(100vh - 8vw);
   width: 90vw;
   z-index: -1;
+}
+
+.red {
+  color: var(--red);
+}
+
+.orange {
+  color: var(--orange);
+}
+
+.yellow {
+  color: var(--yellow);
+}
+
+.gradient-bar {
+  background: linear-gradient(var(--red), var(--orange), var(--yellow));
 }
 
 /* F O N T S */
