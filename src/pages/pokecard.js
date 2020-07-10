@@ -7,8 +7,13 @@ import Project from "../components/project"
 const PokecardPage = function () {
   let text = [
     [
-      "Challenge: Large, complex and inter-dependent state objects",
-      "Solution: a single useReducer and app-wide dispatch with useContext",
+      "Laying out varying amounts of text in a visual medium where spacing nuance is key",
+      "Some JavaScript that scales text based on character count, and a whole lot of Flexbox.",
+    ],
+    [
+      "External API is sometimes slow to respond, and app requires fluid click-response for proper UX",
+      `Pre-fetch the first card on app load. When the user clicks the button, they are not fetching,
+       but displaying already fetched data, and then pre-fetching the next set of data on the same click.`,
     ],
   ]
 

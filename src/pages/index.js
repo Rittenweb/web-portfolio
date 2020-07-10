@@ -22,19 +22,53 @@ const IndexPage = () => {
           </a>
         </div>
         <div style={{ margin: "30px 0" }}>
-          <h1 style={{ fontSize: "3.6rem", marginBottom: "40px" }}>
-            Hi, I'm Bennett :)
+          <h1 style={{ fontSize: "4rem", marginBottom: "40px" }}>
+            Hi, I'm <span>Bennett</span> :)
           </h1>
-          <div>
-            <h3 style={{ marginBottom: "10px" }}>
-              I'm a self-taught Front-End Developer
-            </h3>
-            <h3>...and a writer, and generally a Creative Type Guy</h3>
+          <div
+            style={{
+              display: "flex",
+              height: "10vh",
+              justifyContent: "space-between",
+              fontSize: "1.4rem",
+            }}
+          >
+            <div
+              style={{
+                height: "10vh",
+                width: "4px",
+                background: "linear-gradient(#db895d, #faa434, #fdc606)",
+                marginRight: "16px",
+                borderRadius: "2px",
+              }}
+            ></div>
+            <div
+              style={{
+                height: "10vh",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-evenly",
+              }}
+            >
+              <h3 style={{ paddingTop: "8px" }}>
+                I'm a self-taught{" "}
+                <span style={{ color: "#FAA434" }}>Front-End Developer</span>
+              </h3>
+              <h3 style={{ paddingTop: "8px" }}>
+                ...and a <span style={{ color: "#DB895D" }}>writer</span>, and
+                generally a{" "}
+                <span style={{ color: "#FDC606" }}>Creative Type Guy</span>
+              </h3>
+            </div>
           </div>
         </div>
-        <h5 style={{ marginBottom: "40px" }}>
+        <h4
+          style={{
+            marginBottom: "40px",
+          }}
+        >
           Check out some of my web projects! (I recommend "Fairy Chess")
-        </h5>
+        </h4>
       </div>
       <Buttons current={""} isBig={true} />
     </Layout>
