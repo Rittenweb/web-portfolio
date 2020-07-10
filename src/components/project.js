@@ -43,11 +43,7 @@ export default function Project({ title, video, source, live, text }) {
                 <div
                   className="gradient-bar"
                   style={{
-                    height: "5vh",
-                    minWidth: "4px",
-                    maxWidth: "4px",
                     marginRight: "8px",
-                    borderRadius: "4px",
                   }}
                 ></div>
                 <div>
@@ -59,11 +55,7 @@ export default function Project({ title, video, source, live, text }) {
                 <div
                   className="gradient-bar"
                   style={{
-                    height: "10vh",
-                    minWidth: "4px",
-                    maxWidth: "4px",
                     marginRight: "8px",
-                    borderRadius: "4px",
                     marginLeft: "30px",
                   }}
                 ></div>

@@ -32,7 +32,7 @@ module.exports = {
       options: {
         fonts: [{
             family: `Play`,
-            variants: ['400']
+            variants: ['700']
           },
           {
             family: `Gayathri`,

@@ -22,34 +22,25 @@ const IndexPage = () => {
           </a>
         </div>
         <div style={{ margin: "30px 0" }}>
-          <h1 style={{ fontSize: "4rem", marginBottom: "40px" }}>
+          <h1
+            style={{
+              fontSize: "4rem",
+              marginBottom: "40px",
+              fontFamily: '"Kodchasan", sans-serif',
+            }}
+          >
             Hi, I'm <span>Bennett</span> :)
           </h1>
           <div
             style={{
               display: "flex",
-              height: "10vh",
               justifyContent: "space-between",
               fontSize: "1.4rem",
+              fontFamily: '"Gayathri", sans-serif',
             }}
           >
-            <div
-              className="gradient-bar"
-              style={{
-                height: "10vh",
-                width: "4px",
-                marginRight: "16px",
-                borderRadius: "2px",
-              }}
-            ></div>
-            <div
-              style={{
-                height: "10vh",
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "space-evenly",
-              }}
-            >
+            <div className="gradient-bar" style={{ marginRight: "16px" }}></div>
+            <div>
               <h3 style={{ paddingTop: "8px" }}>
                 I'm a self-taught{" "}
                 <span className="orange">Front-End Developer</span>
@@ -64,6 +55,7 @@ const IndexPage = () => {
         <h4
           style={{
             marginBottom: "40px",
+            fontFamily: '"Gayathri", sans-serif',
           }}
         >
           Check out some of my web projects! (I recommend "Fairy Chess")

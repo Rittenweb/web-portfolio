@@ -7,8 +7,8 @@ import Project from "../components/project"
 const IntimpossiblePage = function () {
   let text = [
     [
-      "Challenge: Large, complex and inter-dependent state objects",
-      "Solution: a single useReducer and app-wide dispatch with useContext",
+      "Simple app with simple logic and layout",
+      "Build it with vanilla JS and direct DOM manipulation, just to practice!",
     ],
   ]
 
