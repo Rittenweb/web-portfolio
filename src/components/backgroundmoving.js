@@ -1,7 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import BackgroundImage from "gatsby-background-image"
 
 export default function BackgroundMoving() {
   const data = useStaticQuery(graphql`
@@ -17,21 +16,26 @@ export default function BackgroundMoving() {
   `)
 
   return (
-    <BackgroundImage
-      fluid={data.backgroundImage.childImageSharp.fluid}
-      style={{
-        position: "fixed",
-        width: "120vw",
-        minHeight: "125vh",
-        top: "-10vw",
-        left: "-10vw",
-        zIndex: -2,
-        filter: "url(#turbulence)",
-        backgroundRepeat: "repeat",
-        backgroundSize: "auto auto",
-      }}
-    >
-      <svg>
+    <>
+      <div
+        style={{
+          position: "fixed",
+          top: "-10vh",
+          left: "-10vw",
+          zIndex: -2,
+          // animation: "fadeIn 7s",
+        }}
+      >
+        <Img
+          fluid={data.backgroundImage.childImageSharp.fluid}
+          style={{
+            filter: "url(#turbulence)",
+            minWidth: "110vw",
+            minHeight: "116vh",
+          }}
+        />
+      </div>
+      <svg style={{ position: "fixed" }}>
         <filter id="turbulence" x="0" y="0" width="100%" height="100%">
           <feTurbulence
             id="ripple-filter"
@@ -50,6 +54,6 @@ export default function BackgroundMoving() {
           />
         </filter>
       </svg>
-    </BackgroundImage>
+    </>
   )
 }

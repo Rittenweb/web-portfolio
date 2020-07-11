@@ -33,7 +33,7 @@ export default function Button({ to, text, imgOffset, isBig }) {
         onMouseLeave={handleMouseLeave}
         style={{
           position: "relative",
-          fontSize: isBig ? "calc(0.3rem + 1.2vw)" : "calc(0.7rem + 0.4vw)",
+          fontSize: isBig ? "calc(0.2rem + 1.1vw)" : "calc(0.7rem + 0.4vw)",
         }}
       >
         <div
