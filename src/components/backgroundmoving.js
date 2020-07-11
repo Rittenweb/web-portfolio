@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-export default function BackgroundMoving() {
+export default function BackgroundMoving({ path }) {
   const data = useStaticQuery(graphql`
     query {
       backgroundImage: file(relativePath: { eq: "160.jpg" }) {
@@ -23,7 +23,7 @@ export default function BackgroundMoving() {
           top: "-10vh",
           left: "-10vw",
           zIndex: -2,
-          // animation: "fadeIn 7s",
+          animation: path ? "fadeIn 4s ease-in" : "",
         }}
       >
         <Img

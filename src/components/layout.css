@@ -315,7 +315,7 @@ iframe {
 }
 
 .background {
-  background-image: url("../images/ocean.jpg");
+  background-image: url("../images/ocean.webp");
   position: fixed;
   top: 4vw;
   left: 5vw;

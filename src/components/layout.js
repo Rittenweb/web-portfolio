@@ -2,7 +2,7 @@ import React from "react"
 import BackgroundMoving from "./backgroundmoving"
 import "./layout.css"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, path }) => {
   return (
     <>
       <main
@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
         </div>
         <div className="background"></div>
       </main>
-      <BackgroundMoving />
+      <BackgroundMoving path={path} />
     </>
   )
 }

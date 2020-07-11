@@ -5,9 +5,9 @@ import LinkedInImage from "../components/linkedInImage"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const IndexPage = () => {
+const IndexPage = ({ location }) => {
   return (
-    <Layout>
+    <Layout path={location.pathname}>
       <SEO title="Bennett Winters: Home" />
       <div className="home-block">
         <div style={{ display: "flex" }}>
