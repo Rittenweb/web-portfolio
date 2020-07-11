@@ -4,6 +4,7 @@ import GitHubImageLarge from "../components/githubImageLarge"
 import LinkedInImage from "../components/linkedInImage"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 const IndexPage = ({ location }) => {
   return (
@@ -11,15 +12,15 @@ const IndexPage = ({ location }) => {
       <SEO title="Bennett Winters: Home" />
       <div className="home-block">
         <div style={{ display: "flex" }}>
-          <a href="https://github.com/Rittenweb">
+          <OutboundLink href="https://github.com/Rittenweb">
             <GitHubImageLarge />
-          </a>
-          <a
+          </OutboundLink>
+          <OutboundLink
             href="https://www.linkedin.com/in/bennett-winters-18a0024a/"
             style={{ marginLeft: "16px" }}
           >
             <LinkedInImage />
-          </a>
+          </OutboundLink>
         </div>
         <div style={{ margin: "30px 0" }}>
           <h1

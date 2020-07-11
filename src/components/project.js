@@ -1,5 +1,6 @@
 import React from "react"
 import GitHubImageSmall from "./githubImageSmall"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 export default function Project({ title, video, source, live, text }) {
   return (
@@ -14,16 +15,16 @@ export default function Project({ title, video, source, live, text }) {
               alignItems: "center",
             }}
           >
-            <a href={source}>
+            <OutboundLink href={source}>
               <GitHubImageSmall />
-            </a>
-            <a
+            </OutboundLink>
+            <OutboundLink
               href={live}
               style={{ width: "28px", fontSize: "1rem", marginBottom: "10px" }}
               className="orange-box"
             >
               <div className="gradient-text orange-button-text">Live</div>
-            </a>
+            </OutboundLink>
           </div>
         </h2>
         <div className="video-wrapper">
