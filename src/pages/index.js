@@ -24,7 +24,7 @@ const IndexPage = () => {
         <div style={{ margin: "30px 0" }}>
           <h1
             style={{
-              fontSize: "4rem",
+              fontSize: "calc(1rem + 3.3vw)",
               marginBottom: "40px",
               fontFamily: '"Kodchasan", sans-serif',
             }}
@@ -34,8 +34,7 @@ const IndexPage = () => {
           <div
             style={{
               display: "flex",
-              justifyContent: "space-between",
-              fontSize: "1.4rem",
+              fontSize: "calc(1rem + 0.5vw)",
               fontFamily: '"Gayathri", sans-serif',
             }}
           >
@@ -56,6 +55,7 @@ const IndexPage = () => {
           style={{
             marginBottom: "40px",
             fontFamily: '"Gayathri", sans-serif',
+            fontSize: "calc(0.5rem + .6vw)",
           }}
         >
           Check out some of my web projects! (I recommend "Fairy Chess")

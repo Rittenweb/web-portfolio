@@ -4,31 +4,54 @@ import Button from "./button"
 export default function Buttons({ current, isBig }) {
   return (
     <div className={isBig ? "buttons buttons-big" : "buttons buttons-small"}>
-      {current !== "" && <Button to="/" text="Home" imgOffset={-4} />}
+      {current !== "" && (
+        <Button to="/" text="Home" imgOffset={-3} isBig={isBig} />
+      )}
       {current !== "about" && (
-        <Button to="/about" text="About Me" imgOffset={-3} />
+        <Button to="/about" text="About Me" imgOffset={-2.25} isBig={isBig} />
       )}
       {current !== "fairychess" && (
-        <Button to="/fairychess" text="Fairy Chess" imgOffset={-2} />
+        <Button
+          to="/fairychess"
+          text="Fairy Chess"
+          imgOffset={-1.33}
+          isBig={isBig}
+        />
       )}
       {current !== "antiadj" && (
-        <Button to="/antiadj" text="Anti-Adjective Editor" imgOffset={-1} />
+        <Button
+          to="/antiadj"
+          text="Anti-Adjective Editor"
+          imgOffset={-0.5}
+          isBig={isBig}
+        />
       )}
       {current !== "iclibrary" && (
-        <Button to="/iclibrary" text="I.C. Library Homepage" imgOffset={0} />
+        <Button
+          to="/iclibrary"
+          text="I.C. Library Homepage"
+          imgOffset={0.5}
+          isBig={isBig}
+        />
       )}
       {current !== "pokecard" && (
-        <Button to="/pokecard" text="PokéCard Scrambler" imgOffset={1} />
+        <Button
+          to="/pokecard"
+          text="PokéCard Scrambler"
+          imgOffset={1.33}
+          isBig={isBig}
+        />
       )}
       {current !== "intimpossible" && (
         <Button
           to="/intimpossible"
           text="Intermediate Impossible"
-          imgOffset={2}
+          imgOffset={2.25}
+          isBig={isBig}
         />
       )}
       {current !== "contact" && (
-        <Button to="/contact" text="Contact Me" imgOffset={3} />
+        <Button to="/contact" text="Contact Me" imgOffset={3} isBig={isBig} />
       )}
       <svg style={{ position: "fixed", zIndex: -2 }}>
         <filter id="lesserturbulence" x="0" y="0" width="100%" height="100%">

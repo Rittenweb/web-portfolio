@@ -16,7 +16,10 @@ const PdfImage = () => {
   `)
 
   return (
-    <Img fluid={data.theImage.childImageSharp.fluid} style={{ width: 64 }} />
+    <Img
+      fluid={data.theImage.childImageSharp.fluid}
+      style={{ minWidth: "64px" }}
+    />
   )
 }
 

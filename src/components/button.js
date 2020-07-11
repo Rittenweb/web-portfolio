@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-export default function Button({ to, text, imgOffset }) {
+export default function Button({ to, text, imgOffset, isBig }) {
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "160.jpg" }) {
@@ -31,7 +31,10 @@ export default function Button({ to, text, imgOffset }) {
         className="button"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
-        style={{ position: "relative" }}
+        style={{
+          position: "relative",
+          fontSize: isBig ? "calc(0.3rem + 1.2vw)" : "calc(0.7rem + 0.4vw)",
+        }}
       >
         <div
           className="button-clip"

@@ -9,13 +9,13 @@
 
 @media (max-width: 1000px) {
   :root {
-    --imgScaleRatio: 10px;
+    --imgScaleRatio: 7px;
   }
 }
 
 @media (max-width: 600px) {
   :root {
-    --imgScaleRatio: 4px;
+    --imgScaleRatio: 1px;
   }
 }
 
@@ -45,6 +45,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-left: 20px;
 }
 
 .buttons-small {
@@ -84,7 +85,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 60%;
   height: 100%;
   color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
@@ -94,12 +95,12 @@ body {
   padding-left: 16px;
   font-family: "Play", sans-serif;
   font-weight: 700;
-  font-size: 1.1rem;
 }
 
 .home-block {
   margin-left: 10vw;
   height: 70vh;
+  max-width: 60vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -120,9 +121,16 @@ body {
   font-family: "Gayathri", sans-serif;
 }
 
+.skills-and-resume {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .contact-block {
   margin-left: 10vw;
   height: 70vh;
+  max-width: 50vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -135,12 +143,12 @@ body {
 }
 
 .contact-input {
-  width: 47.5%;
+  width: 44%;
   background-color: transparent;
   color: white;
   border: 1px solid grey;
   padding: 6px;
-  margin: 5px 0 10px 0;
+  margin: 10px 0 10px 0;
   font-family: "Gayathri", sans-serif;
 }
 
@@ -149,14 +157,15 @@ body {
 }
 
 .contact-message {
-  width: 100%;
+  width: calc(100% - 14px);
   height: 16vh;
   resize: none;
   font-family: "Gayathri", sans-serif;
 }
 
 .contact-send {
-  width: 21%;
+  width: 6vw;
+  min-width: 60px;
   outline: none;
   border: none;
   align-self: flex-end;
@@ -303,4 +312,28 @@ iframe {
   min-height: 100%;
   min-width: 4px;
   border-radius: 2px;
+}
+
+h1 {
+  font-family: "Kodchasan", sans-serif;
+}
+
+@media (max-width: 400px) {
+  .home-block,
+  .contact-block,
+  .about-block {
+    height: 88vh;
+  }
+}
+
+@media (max-width: 1000px) {
+  .skills-and-resume {
+    flex-direction: column;
+  }
+  .about-block {
+    width: 60vw;
+  }
+  .about-scroll {
+    overflow-y: scroll;
+  }
 }

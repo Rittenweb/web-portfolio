@@ -8,12 +8,18 @@ const ContactPage = () => (
   <Layout>
     <SEO title="Bennett Winters: Contact Info" />
     <div>
-      <div className="contact-block">
-        <h1 className="gradient-text" style={{ width: "200px" }}>
+      <div
+        className="contact-block"
+        style={{ fontFamily: `'Gayathri', sans-serif` }}
+      >
+        <h1
+          className="gradient-text"
+          style={{ width: "calc(140px + 8vw)", fontSize: "calc(1.4rem + 1vw)" }}
+        >
           Contact Me
         </h1>
         <div style={{ display: "flex", alignItems: "center" }}>
-          <h3 style={{ margin: "0 40px 0 0" }}>
+          <h3 style={{ margin: "0 1.5vw 0 0" }}>
             My email and phone are on my resume:
           </h3>
           <PdfImage />
