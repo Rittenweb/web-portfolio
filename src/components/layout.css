@@ -185,6 +185,13 @@ textarea:-webkit-autofill:focus {
   transition: background-color 9999s ease-in-out 0s;
 }
 
+.project-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70vw;
+}
+
 .video-block {
   background: linear-gradient(145deg, var(--darkblue), var(--lightblue));
   box-shadow: 10px 10px 0px var(--yellow), -10px -10px 0px var(--red);
@@ -196,7 +203,7 @@ textarea:-webkit-autofill:focus {
 .video-header {
   display: flex;
   justify-content: space-between;
-  font-size: 2vw;
+  font-size: 1rem + 1vw;
   font-family: "Kodchasan", sans-serif;
 }
 
@@ -219,6 +226,19 @@ iframe {
   margin: 1.5vw;
   max-width: 28vw;
   font-family: "Gayathri", sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  overflow-y: auto;
+}
+
+.challenge-pair {
+  margin: auto;
+}
+
+.challenge-single {
+  display: flex;
+  margin-bottom: 10px;
 }
 
 .challenge-text {
@@ -318,11 +338,40 @@ h1 {
   font-family: "Kodchasan", sans-serif;
 }
 
+.about-scroll {
+  overflow-y: auto;
+}
+
 @media (max-width: 400px) {
   .home-block,
   .contact-block,
   .about-block {
     height: 88vh;
+  }
+}
+
+@media (max-width: 700px) {
+  .project-block {
+    flex-direction: column;
+    height: 88vh;
+    justify-content: space-evenly;
+    margin-left: 7vw;
+  }
+
+  .video-block {
+    min-width: 51vw;
+  }
+
+  .video-wrapper {
+    min-width: 50vw;
+    width: 50vw;
+    height: 37.5vw;
+  }
+
+  .challenge-block {
+    margin-top: 20px;
+    min-width: 55vw;
+    height: 40%;
   }
 }
 
@@ -332,8 +381,5 @@ h1 {
   }
   .about-block {
     width: 60vw;
-  }
-  .about-scroll {
-    overflow-y: scroll;
   }
 }

@@ -3,7 +3,7 @@ import GitHubImageSmall from "./githubImageSmall"
 
 export default function Project({ title, video, source, live, text }) {
   return (
-    <>
+    <div className="project-block">
       <div className="video-block">
         <h2 className="video-header">
           {title}
@@ -19,7 +19,7 @@ export default function Project({ title, video, source, live, text }) {
             </a>
             <a
               href={live}
-              style={{ width: "28px", fontSize: "1rem" }}
+              style={{ width: "28px", fontSize: "1rem", marginBottom: "10px" }}
               className="orange-box"
             >
               <div className="gradient-text orange-button-text">Live</div>
@@ -38,8 +38,8 @@ export default function Project({ title, video, source, live, text }) {
       <div className="challenge-block">
         {text.map(pair => {
           return (
-            <>
-              <div style={{ display: "flex" }}>
+            <div className="challenge-pair">
+              <div className="challenge-single">
                 <div
                   className="gradient-bar"
                   style={{
@@ -51,7 +51,7 @@ export default function Project({ title, video, source, live, text }) {
                   {pair[0]}
                 </div>
               </div>
-              <div style={{ display: "flex" }}>
+              <div className="challenge-single">
                 <div
                   className="gradient-bar"
                   style={{
@@ -64,10 +64,10 @@ export default function Project({ title, video, source, live, text }) {
                   {pair[1]}
                 </div>
               </div>
-            </>
+            </div>
           )
         })}
       </div>
-    </>
+    </div>
   )
 }
