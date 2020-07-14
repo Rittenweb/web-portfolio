@@ -68,10 +68,13 @@ const AboutPage = () => (
             <div className="gradient-text">CSS</div>
           </div>
           <div className="orange-box">
-            <div className="gradient-text">GraphQL</div>
+            <div className="gradient-text">Jamstack</div>
           </div>
           <div className="orange-box">
             <div className="gradient-text">Jest</div>
+          </div>
+          <div className="orange-box">
+            <div className="gradient-text">Git</div>
           </div>
         </div>
         <h1 style={{ margin: "16px", fontSize: "calc(.7rem + 1vw)" }}>

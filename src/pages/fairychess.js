@@ -7,13 +7,13 @@ import Project from "../components/project"
 const FairychessPage = function () {
   let text = [
     [
-      "Large, complex and inter-dependent state objects",
-      "A single useReducer and app-wide dispatch with useContext",
+      "Large, deeply-nested, and inter-dependent state objects that determine view rendering.",
+      "Unidirectional data-flow with a single useReducer. Its dispatch is shared app-wide with useContext.",
     ],
     [
-      `~150 different chess pieces with precise, non-random movement algorithms`,
-      `Function that recursively recombines pieces, allowing complex pieces to be 
-      defined in the database by listing "component" pieces rather than listing all possible moves`,
+      `~150 different chess pieces with precise, non-random movement algorithms.`,
+      `A concise but readable encoding system that translates into movement algorithms. And, a higher-level algorithm to recursively 
+      recombine pieces, so complex pieces can be defined in the model by listing "component" pieces rather than listing moves.`,
     ],
     [
       `"background-attachment: fixed;" broken in Chrome with animations.`,

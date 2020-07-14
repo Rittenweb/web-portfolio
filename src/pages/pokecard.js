@@ -7,8 +7,8 @@ import Project from "../components/project"
 const PokecardPage = function () {
   let text = [
     [
-      "Laying out varying amounts of text in a visual medium where spacing nuance is key",
-      "Some JavaScript that scales text based on character count, and a whole lot of Flexbox.",
+      `Laying out highly variant amounts of text (especially the "attack" text) in a fixed-size space, in a visual medium where spacing nuance is key`,
+      "Some JavaScript that scales text size based on character count, and a whole lot of Flexbox.",
     ],
     [
       "External API is sometimes slow to respond, and app requires fluid click-response for proper UX",

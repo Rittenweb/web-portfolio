@@ -8,7 +8,7 @@ const IntimpossiblePage = function () {
   let text = [
     [
       "Simple app with simple logic and layout",
-      "Build it with vanilla JS and direct DOM manipulation, just to practice!",
+      "Build it framework-less with vanilla JS and direct DOM manipulation, just to practice!",
     ],
   ]
 
