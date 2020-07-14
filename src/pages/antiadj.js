@@ -20,7 +20,7 @@ const AntiadjPage = function () {
 
   return (
     <Layout>
-      <SEO title="Bennett Winters: Anti-Adjective" />
+      <SEO title="Anti-Adjective" />
 
       <Project
         title="Anti-Adjective Text Editor"

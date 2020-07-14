@@ -6,7 +6,7 @@ import PdfImage from "../components/pdfImage"
 
 const AboutPage = () => (
   <Layout>
-    <SEO title="Bennett Winters: About" />
+    <SEO title="About" />
     <div className="about-block">
       <div>
         <h1

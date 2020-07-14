@@ -24,7 +24,7 @@ const FairychessPage = function () {
 
   return (
     <Layout>
-      <SEO title="Bennett Winters: Fairy Chess" />
+      <SEO title="Fairy Chess" />
 
       <Project
         title="Fairy Chess"

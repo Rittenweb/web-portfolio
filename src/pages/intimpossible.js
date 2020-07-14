@@ -14,7 +14,7 @@ const IntimpossiblePage = function () {
 
   return (
     <Layout>
-      <SEO title="Bennett Winters: Intermediate Impossible" />
+      <SEO title="Intermediate Impossible" />
 
       <Project
         title="Intermediate Impossible"

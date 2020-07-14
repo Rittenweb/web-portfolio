@@ -19,7 +19,7 @@ const PokecardPage = function () {
 
   return (
     <Layout>
-      <SEO title="Bennett Winters: PokéCard Scrambler" />
+      <SEO title="PokéCard Scrambler" />
 
       <Project
         title="PokéCard Scrambler"

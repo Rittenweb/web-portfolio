@@ -9,7 +9,7 @@ import { OutboundLink } from "gatsby-plugin-google-analytics"
 const IndexPage = ({ location }) => {
   return (
     <Layout path={location.pathname}>
-      <SEO title="Bennett Winters: Home" />
+      <SEO title="Home" />
       <div className="home-block">
         <div style={{ display: "flex" }}>
           <OutboundLink href="https://github.com/Rittenweb">

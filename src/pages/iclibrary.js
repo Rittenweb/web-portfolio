@@ -27,7 +27,7 @@ const IclibraryPage = function () {
 
   return (
     <Layout>
-      <SEO title="Bennett Winters: I.C. Library" />
+      <SEO title="I.C. Library" />
 
       <Project
         title="Immaculate Conception Library Homepage"

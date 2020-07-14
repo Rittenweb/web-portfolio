@@ -6,7 +6,7 @@ import PdfImage from "../components/pdfImage"
 
 const ContactPage = () => (
   <Layout>
-    <SEO title="Bennett Winters: Contact Info" />
+    <SEO title="Contact" />
     <div>
       <div
         className="contact-block"
