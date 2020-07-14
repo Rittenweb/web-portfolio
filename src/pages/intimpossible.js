@@ -18,7 +18,7 @@ const IntimpossiblePage = function () {
 
       <Project
         title="Intermediate Impossible"
-        video="https://www.youtube.com/embed/Zhawgd0REhA"
+        video="https://drive.google.com/file/d/1ENbYvbH9W6LSweg8r2DkQrWUJGA5Qi-t/preview"
         source="http://google.com"
         live="http://google.com"
         text={text}

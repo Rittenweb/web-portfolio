@@ -211,7 +211,9 @@ textarea:-webkit-autofill:focus {
   position: relative;
   width: 30vw;
   min-width: 30vw;
-  height: 22.5vw;
+  height: 14.2vw;
+  margin-top: 2vw;
+  margin-bottom: 1vw;
 }
 
 iframe {
@@ -230,6 +232,21 @@ iframe {
   flex-direction: column;
   height: 75vh;
   overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: black transparent;
+}
+
+.challenge-block::-webkit-scrollbar {
+  width: 5px;
+}
+
+.challenge-block::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.challenge-block::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 6px;
 }
 
 .challenge-pair {
@@ -349,6 +366,21 @@ h1 {
 
 .about-scroll {
   overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: black transparent;
+}
+
+.about-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.about-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.about-scroll::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 6px;
 }
 
 @media (max-width: 400px) {
@@ -368,13 +400,13 @@ h1 {
   }
 
   .video-block {
-    min-width: 51vw;
+    min-width: 56vw;
   }
 
   .video-wrapper {
-    min-width: 50vw;
-    width: 50vw;
-    height: 37.5vw;
+    min-width: 55vw;
+    width: 55vw;
+    height: 26.05vw;
   }
 
   .challenge-block {

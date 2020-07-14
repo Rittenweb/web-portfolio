@@ -24,7 +24,7 @@ const AntiadjPage = function () {
 
       <Project
         title="Anti-Adjective Text Editor"
-        video="https://www.youtube.com/embed/Zhawgd0REhA"
+        video="https://drive.google.com/file/d/1lhksEkZ5W_nMXwEmDC1iZisatp0B_3hE/preview"
         source="http://google.com"
         live="http://google.com"
         text={text}
