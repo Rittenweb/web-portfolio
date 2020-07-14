@@ -216,6 +216,16 @@ textarea:-webkit-autofill:focus {
   margin-bottom: 1vw;
 }
 
+.github-thumb {
+  width: 32px;
+}
+
+.live-button {
+  width: 28px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
 iframe {
   position: absolute;
   top: 0;
@@ -407,6 +417,16 @@ h1 {
     min-width: 55vw;
     width: 55vw;
     height: 26.05vw;
+  }
+
+  .github-thumb {
+    width: 24px;
+  }
+
+  .live-button {
+    width: 20px;
+    font-size: 0.7rem;
+    margin-bottom: 10px;
   }
 
   .challenge-block {

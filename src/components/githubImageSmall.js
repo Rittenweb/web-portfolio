@@ -7,15 +7,19 @@ const GitHubImageSmall = () => {
     query {
       file(relativePath: { eq: "GitHub-Mark-32px.png" }) {
         childImageSharp {
-          fixed(width: 32, height: 32) {
-            ...GatsbyImageSharpFixed
+          fluid(maxWidth: 32) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
     }
   `)
 
-  return <Img fixed={data.file.childImageSharp.fixed} />
+  return (
+    <div className="github-thumb">
+      <Img fluid={data.file.childImageSharp.fluid} />
+    </div>
+  )
 }
 
 export default GitHubImageSmall

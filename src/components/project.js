@@ -18,11 +18,7 @@ export default function Project({ title, video, source, live, text }) {
             <OutboundLink href={source}>
               <GitHubImageSmall />
             </OutboundLink>
-            <OutboundLink
-              href={live}
-              style={{ width: "28px", fontSize: "1rem", marginBottom: "10px" }}
-              className="orange-box"
-            >
+            <OutboundLink href={live} className="orange-box live-button">
               <div className="gradient-text orange-button-text">Live</div>
             </OutboundLink>
           </div>
