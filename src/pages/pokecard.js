@@ -24,8 +24,8 @@ const PokecardPage = function () {
       <Project
         title="PokéCard Scrambler"
         video="https://www.youtube.com/embed/Zhawgd0REhA"
-        source="http://google.com"
-        live="http://google.com"
+        source="https://github.com/Rittenweb/poke-card-scrambler"
+        live="https://rittenweb.github.io/poke-card-scrambler/"
         text={text}
       />
       <Buttons current={"pokecard"} isBig={false} />

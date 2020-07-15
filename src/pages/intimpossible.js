@@ -19,8 +19,8 @@ const IntimpossiblePage = function () {
       <Project
         title="Intermediate Impossible"
         video="https://drive.google.com/file/d/1ENbYvbH9W6LSweg8r2DkQrWUJGA5Qi-t/preview"
-        source="http://google.com"
-        live="http://google.com"
+        source="https://github.com/Rittenweb/intermediate-impossible"
+        live="https://rittenweb.github.io/intermediate-impossible/"
         text={text}
       />
       <Buttons current={"intimpossible"} isBig={false} />

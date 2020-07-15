@@ -29,8 +29,8 @@ const FairychessPage = function () {
       <Project
         title="Fairy Chess"
         video="https://www.youtube.com/embed/Zhawgd0REhA"
-        source="http://google.com"
-        live="http://google.com"
+        source="https://github.com/Rittenweb/fairy-chess"
+        live="https://fairychess.app/"
         text={text}
       />
       <Buttons current={"fairychess"} isBig={false} />
