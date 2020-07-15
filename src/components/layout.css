@@ -218,6 +218,7 @@ textarea:-webkit-autofill:focus {
 
 .github-thumb {
   width: 32px;
+  margin-bottom: 6px;
 }
 
 .live-button {
@@ -378,6 +379,9 @@ h1 {
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: black transparent;
+  max-height: 40vh;
+  box-shadow: inset 0px -24px 24px -24px var(--red);
+  padding: 8px;
 }
 
 .about-scroll::-webkit-scrollbar {
@@ -442,5 +446,8 @@ h1 {
   }
   .about-block {
     width: 60vw;
+  }
+  .about-scroll {
+    max-height: 30vh;
   }
 }

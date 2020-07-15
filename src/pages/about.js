@@ -19,25 +19,43 @@ const AboutPage = () => (
         >
           About Me
         </h1>
-        <div className="about-scroll" style={{ maxHeight: "30vh" }}>
+        <div className="about-scroll">
           <div className="about-text">
-            I have an undergraduate degree in English literature and a graduate
-            degree in creative writing. I've taught university-level writing in
-            both fiction and essay forms. I believe writing has a ton in common
-            with coding, and I'll be thrilled to bore you with the details of
+            Before getting into web development, I earned an undergraduate
+            degree in English literature and a graduate degree in creative
+            writing. I've taught university-level writing in both fiction and
+            essay forms. I believe that as crafts, writing and coding share a
+            ton of skills, and I'll be thrilled to bore you with the details of
             that analogy if you ask!
           </div>
           <div className="about-text">
-            For now I'll just say... Writing has made me focused on the end
-            product. What the reader/user sees and feels is what matters in the
-            end. I'm no professional designer, but I get excited about UI and
-            UX.
+            Writing taught me to prioritize strong architecture/planning,
+            clarity, and above all, user perception, and these have become my
+            assets as a developer, too. To write quality code, you first need to
+            have clear, quality thought about the problem at hand. To write
+            maintainable, comprehensible code, you have to see it through the
+            brain of another developer. To create a successful product, you have
+            to see it through the emotions of the user. Being a self-taught
+            developer has cultivated my tenacity and love for self-improvement
+            in a craft as near-infinite, and as rewarding, as coding is.
           </div>
           <div className="about-text">
-            A lot about coding gets me excited, especially on the front end. I'm
-            looking for a team. I love the front end. I love the creation
-            potential. I love the immediate feedback. I love architecting React
-            components and state.
+            I love the creativity and problem-solving inherent in coding,
+            especially on the front end, where the feedback is quick and the raw
+            potential to <i>create something</i> increases every year, as
+            browsers get more powerful and APIs more ingenious. I'm no
+            professional designer, but I get excited about beautiful UI and UX.
+            Maybe the task I love most on the front end is architecting React
+            components and state for maintainability, extensibility, and
+            efficient rendering.
+          </div>
+          <div className="about-text">
+            I'm looking for a team where I can contribute immediately, but just
+            as importantly, one where I'll be pushed to improve by learning
+            better practices, more technologies, more difficult patterns, and
+            more truths about the industry. A strong code review culture would
+            be great. If you read all this, wow, that's pretty cool of you! I'd
+            love to work with you! Contact me, and thanks for reading :)
           </div>
         </div>
       </div>
