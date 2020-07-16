@@ -18,7 +18,7 @@ const IntimpossiblePage = function () {
 
       <Project
         title="Intermediate Impossible"
-        video="https://drive.google.com/file/d/1ENbYvbH9W6LSweg8r2DkQrWUJGA5Qi-t/preview"
+        video="https://www.youtube.com/embed/Z4ppj413PDE"
         source="https://github.com/Rittenweb/intermediate-impossible"
         live="https://rittenweb.github.io/intermediate-impossible/"
         text={text}

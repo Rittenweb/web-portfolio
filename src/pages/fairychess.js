@@ -28,7 +28,7 @@ const FairychessPage = function () {
 
       <Project
         title="Fairy Chess"
-        video="https://www.youtube.com/embed/Zhawgd0REhA"
+        video="https://www.youtube.com/embed/D2EAn9n-hPs"
         source="https://github.com/Rittenweb/fairy-chess"
         live="https://fairychess.app/"
         text={text}

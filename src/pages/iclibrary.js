@@ -31,7 +31,7 @@ const IclibraryPage = function () {
 
       <Project
         title="Immaculate Conception Library Homepage"
-        video="https://www.youtube.com/embed/Zhawgd0REhA"
+        video="https://www.youtube.com/embed/uW1E9W8bhR8"
         source="https://github.com/Rittenweb/ic-library"
         live="https://ic-library.netlify.app/"
         text={text}

@@ -24,7 +24,7 @@ const AntiadjPage = function () {
 
       <Project
         title="Anti-Adjective Text Editor"
-        video="https://drive.google.com/file/d/1lhksEkZ5W_nMXwEmDC1iZisatp0B_3hE/preview"
+        video="https://www.youtube.com/embed/IVETumsOLjo"
         source="https://github.com/Rittenweb/anti-adjective"
         live="https://anti-adjective.netlify.app/"
         text={text}

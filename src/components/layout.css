@@ -212,8 +212,7 @@ textarea:-webkit-autofill:focus {
   width: 30vw;
   min-width: 30vw;
   height: 14.2vw;
-  margin-top: 2vw;
-  margin-bottom: 1vw;
+  margin: 2vw auto 1vw auto;
 }
 
 .github-thumb {

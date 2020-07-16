@@ -27,6 +27,7 @@ export default function Project({ title, video, source, live, text }) {
           <iframe
             src={video}
             frameBorder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             title={title}
           ></iframe>
