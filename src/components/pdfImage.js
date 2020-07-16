@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import resume from "../downloads/bennett_winters_resume.pdf"
 
 const PdfImage = () => {
   const data = useStaticQuery(graphql`
@@ -16,10 +17,12 @@ const PdfImage = () => {
   `)
 
   return (
-    <Img
-      fluid={data.theImage.childImageSharp.fluid}
-      style={{ minWidth: "64px" }}
-    />
+    <a href={resume}>
+      <Img
+        fluid={data.theImage.childImageSharp.fluid}
+        style={{ minWidth: "64px" }}
+      />
+    </a>
   )
 }
 
