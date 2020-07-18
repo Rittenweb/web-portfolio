@@ -10,7 +10,7 @@ const IndexPage = ({ location }) => {
   return (
     <Layout path={location.pathname}>
       <SEO title="Home" />
-      <div className="home-block">
+      <div className="home-block" style={{ animation: "fadeIn 2s ease-in" }}>
         <div style={{ display: "flex" }}>
           <OutboundLink href="https://github.com/Rittenweb">
             <GitHubImageLarge />
