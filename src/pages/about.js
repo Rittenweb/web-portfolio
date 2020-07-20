@@ -45,9 +45,9 @@ const AboutPage = () => (
             potential to <i>create something</i> increases every year, as
             browsers get more powerful and APIs more ingenious. I'm no
             professional designer, but I get excited about beautiful UI and UX.
-            I love creating products that look smooth and cohesive on the
-            surface, but solve complex problems behind-the-screen. I love
-            debugging. Maybe the task I love most on the front end is
+            There's something thrilling about creating a product that looks
+            smooth and cohesive on the surface, but solves complex problems
+            behind-the-screen. Maybe the task I love most on the front end is
             architecting React components and state for maintainability,
             extensibility, and efficient rendering.
           </div>
@@ -63,13 +63,13 @@ const AboutPage = () => (
       </div>
       <div className="skills-and-resume">
         <h1 style={{ margin: "16px", fontSize: "calc(.7rem + 1vw)" }}>
-          Proficiencies:{" "}
+          Skills:{" "}
         </h1>
         <div
           style={{
             display: "flex",
             flexWrap: "wrap",
-            marginRight: "16px",
+            marginRight: "22px",
           }}
         >
           <div className="orange-box">
@@ -95,6 +95,12 @@ const AboutPage = () => (
           </div>
           <div className="orange-box">
             <div className="gradient-text">Git</div>
+          </div>
+          <div className="orange-box">
+            <div className="gradient-text">UI/UX</div>
+          </div>
+          <div className="orange-box">
+            <div className="gradient-text">DevTools</div>
           </div>
         </div>
         <h1 style={{ margin: "16px", fontSize: "calc(.7rem + 1vw)" }}>
