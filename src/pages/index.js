@@ -30,24 +30,27 @@ const IndexPage = ({ location }) => {
               fontFamily: '"Kodchasan", sans-serif',
             }}
           >
-            Hi, I'm <span>Bennett</span> :)
+            Hi, I'm Bennett :)
           </h1>
           <div
             style={{
               display: "flex",
-              fontSize: "calc(1rem + 0.5vw)",
+              fontSize: "calc(1rem + 0.6vw)",
               fontFamily: '"Gayathri", sans-serif',
             }}
           >
             <div className="gradient-bar" style={{ marginRight: "16px" }}></div>
             <div>
               <h3 style={{ paddingTop: "8px" }}>
-                I'm a self-taught{" "}
-                <span className="orange">Front-End Developer</span>
+                I'm a <span className="red">Front</span>-
+                <span className="orange">End</span>{" "}
+                <span className="yellow">Developer </span>
+                with a background
               </h3>
               <h3 style={{ paddingTop: "8px" }}>
-                ...and a <span className="red">writer</span>, and generally a{" "}
-                <span className="yellow">Creative Type Guy</span>
+                in <span className="">technical</span>,{" "}
+                <span className="">expository</span>, and{" "}
+                <span className="">creative</span> writing.
               </h3>
             </div>
           </div>
