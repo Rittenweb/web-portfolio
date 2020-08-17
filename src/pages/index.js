@@ -10,7 +10,10 @@ const IndexPage = ({ location }) => {
   return (
     <Layout path={location.pathname}>
       <SEO title="Home" />
-      <div className="home-block" style={{ animation: "fadeIn 2s ease-in" }}>
+      <div
+        className="home-block"
+        // style={{ animation: "fadeIn 2s ease-in" }}
+      >
         <div style={{ display: "flex" }}>
           <OutboundLink href="https://github.com/Rittenweb">
             <GitHubImageLarge />
@@ -25,7 +28,7 @@ const IndexPage = ({ location }) => {
         <div style={{ margin: "30px 0" }}>
           <h1
             style={{
-              fontSize: "calc(1rem + 3.3vw)",
+              fontSize: "calc(1.2rem + 3.3vw)",
               marginBottom: "40px",
               fontFamily: '"Kodchasan", sans-serif',
             }}
@@ -35,7 +38,7 @@ const IndexPage = ({ location }) => {
           <div
             style={{
               display: "flex",
-              fontSize: "calc(1rem + 0.6vw)",
+              fontSize: "calc(1.1rem + 0.6vw)",
               fontFamily: '"Gayathri", sans-serif',
             }}
           >
@@ -59,7 +62,7 @@ const IndexPage = ({ location }) => {
           style={{
             marginBottom: "40px",
             fontFamily: '"Gayathri", sans-serif',
-            fontSize: "calc(0.5rem + .6vw)",
+            fontSize: "calc(0.6rem + .6vw)",
           }}
         >
           Check out some of my web projects! (I recommend "Fairy Chess")

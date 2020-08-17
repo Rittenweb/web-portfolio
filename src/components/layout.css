@@ -31,7 +31,7 @@ html {
 
 body {
   color: white;
-  background-color: var(--darkblue);
+  background: linear-gradient(145deg, var(--lightblue), var(--darkblue));
   font-family: georgia, serif;
 }
 
@@ -98,8 +98,8 @@ body {
 }
 
 .home-block {
-  margin-left: 10vw;
-  height: 70vh;
+  margin-left: 7.5vw;
+  height: 75vh;
   max-width: 60vw;
   display: flex;
   flex-direction: column;
@@ -108,8 +108,8 @@ body {
 
 .about-block {
   width: 55vw;
-  margin-left: 10vw;
-  height: 70vh;
+  margin-left: 7.5vw;
+  height: 75vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -130,7 +130,7 @@ body {
 .contact-block {
   margin-left: 10vw;
   height: 70vh;
-  max-width: 50vw;
+  width: 40vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -195,7 +195,7 @@ textarea:-webkit-autofill:focus {
 .video-block {
   background: linear-gradient(145deg, var(--darkblue), var(--lightblue));
   box-shadow: 10px 10px 0px var(--yellow), -10px -10px 0px var(--red);
-  margin-left: 2vw;
+  margin-left: 2.75vw;
   padding: 1vw;
   max-width: 32vw;
 }
@@ -240,7 +240,7 @@ iframe {
   font-family: "Gayathri", sans-serif;
   display: flex;
   flex-direction: column;
-  height: 75vh;
+  height: 85vh;
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: black transparent;
@@ -344,10 +344,10 @@ iframe {
 .background {
   background-image: url("../images/ocean.webp");
   position: fixed;
-  top: 4vw;
-  left: 5vw;
-  height: calc(100vh - 8vw);
-  width: 90vw;
+  top: 1vw;
+  left: 1vw;
+  height: calc(100vh - 2vw);
+  width: 98vw;
   z-index: -1;
 }
 
@@ -409,11 +409,15 @@ h1 {
     flex-direction: column;
     height: 88vh;
     justify-content: space-evenly;
-    margin-left: 7vw;
+    margin-left: 1vw;
   }
 
   .video-block {
     min-width: 56vw;
+  }
+
+  .contact-block {
+    width: 50vw;
   }
 
   .video-wrapper {

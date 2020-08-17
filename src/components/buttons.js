@@ -53,7 +53,7 @@ export default function Buttons({ current, isBig }) {
       {current !== "contact" && (
         <Button to="/contact" text="Contact Me" imgOffset={3} isBig={isBig} />
       )}
-      <svg style={{ position: "fixed", zIndex: -2 }}>
+      {/* <svg style={{ position: "fixed", zIndex: -2 }}>
         <filter id="lesserturbulence" x="0" y="0" width="100%" height="100%">
           <feTurbulence
             id="ripple-filter-lesser"
@@ -71,7 +71,7 @@ export default function Buttons({ current, isBig }) {
             repeatCount="indefinite"
           />
         </filter>
-      </svg>
+      </svg> */}
     </div>
   )
 }

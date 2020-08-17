@@ -25,6 +25,14 @@ export default function Button({ to, text, imgOffset, isBig }) {
     setHasTurbulence(false)
   }
 
+  let clipPath = ""
+  if (hasTurbulence) {
+    if (isBig) {
+    } else {
+    }
+  } else {
+  }
+
   return (
     <Link to={to} style={{ height: "12.5%" }}>
       <div
@@ -39,9 +47,11 @@ export default function Button({ to, text, imgOffset, isBig }) {
         <div
           className="button-clip"
           style={{
-            filter: hasTurbulence ? "url(#lesserturbulence)" : "",
+            // filter: hasTurbulence ? "url(#lesserturbulence)" : "",
             clipPath: hasTurbulence
               ? "polygon(0 0, 100% 0, 100% 100%, 0% 100%)"
+              : isBig
+              ? "polygon(0 0, 50% 0, 60% 100%, 0% 100%)"
               : "polygon(0 0, 60% 0, 70% 100%, 0% 100%)",
           }}
         >
@@ -49,7 +59,7 @@ export default function Button({ to, text, imgOffset, isBig }) {
             fluid={data.placeholderImage.childImageSharp.fluid}
             style={{
               width: "110%",
-              transform: `translate(-10px, calc(${imgOffset} * var(--imgScaleRatio))`,
+              transform: `translate(0px, calc(${imgOffset} * var(--imgScaleRatio))`, //x was -10 to mask filter edge, no longer needed
             }}
           />
         </div>

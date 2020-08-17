@@ -5,9 +5,9 @@ import Img from "gatsby-image"
 export default function BackgroundMoving({ path }) {
   const data = useStaticQuery(graphql`
     query {
-      backgroundImage: file(relativePath: { eq: "160.jpg" }) {
+      backgroundImage: file(relativePath: { eq: "twoocean.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 1600) {
+          fluid(maxWidth: 2000) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -20,22 +20,22 @@ export default function BackgroundMoving({ path }) {
       <div
         style={{
           position: "fixed",
-          top: "-10vh",
-          left: "-10vw",
+          top: "0",
+          left: "0",
           zIndex: -2,
-          animation: path ? "fadeIn 4s ease-in" : "",
+          // animation: path ? "fadeIn 4s ease-in" : "",
         }}
       >
         <Img
           fluid={data.backgroundImage.childImageSharp.fluid}
           style={{
-            filter: "url(#turbulence)",
-            minWidth: "110vw",
-            minHeight: "116vh",
+            // filter: "url(#turbulence)",
+            minWidth: "100vw",
+            minHeight: "100vh",
           }}
         />
       </div>
-      <svg style={{ position: "fixed" }}>
+      {/* <svg style={{ position: "fixed" }}>
         <filter id="turbulence" x="0" y="0" width="100%" height="100%">
           <feTurbulence
             id="ripple-filter"
@@ -53,7 +53,7 @@ export default function BackgroundMoving({ path }) {
             repeatCount="indefinite"
           />
         </filter>
-      </svg>
+      </svg> */}
     </>
   )
 }
