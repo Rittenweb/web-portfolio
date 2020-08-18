@@ -25,14 +25,6 @@ export default function Button({ to, text, imgOffset, isBig }) {
     setHasTurbulence(false)
   }
 
-  let clipPath = ""
-  if (hasTurbulence) {
-    if (isBig) {
-    } else {
-    }
-  } else {
-  }
-
   return (
     <Link to={to} style={{ height: "12.5%" }}>
       <div
