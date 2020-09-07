@@ -26,7 +26,7 @@ export default function Button({ to, text, imgOffset, isBig }) {
   }
 
   return (
-    <Link to={to} style={{ height: "12.5%" }}>
+    <Link to={to} style={{ height: "11.11%" }}>
       <div
         className="button"
         onMouseEnter={handleMouseEnter}

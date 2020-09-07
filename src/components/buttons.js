@@ -14,7 +14,7 @@ export default function Buttons({ current, isBig }) {
         <Button
           to="/fairychess"
           text="Fairy Chess"
-          imgOffset={-1.33}
+          imgOffset={-1.5}
           isBig={isBig}
         />
       )}
@@ -22,7 +22,7 @@ export default function Buttons({ current, isBig }) {
         <Button
           to="/antiadj"
           text="Anti-Adjective Editor"
-          imgOffset={-0.5}
+          imgOffset={-0.75}
           isBig={isBig}
         />
       )}
@@ -30,7 +30,15 @@ export default function Buttons({ current, isBig }) {
         <Button
           to="/iclibrary"
           text="I.C. Library Homepage"
-          imgOffset={0.5}
+          imgOffset={0}
+          isBig={isBig}
+        />
+      )}
+      {current !== "reviews" && (
+        <Button
+          to="/reviews"
+          text="Flask Book Reviews"
+          imgOffset={0.75}
           isBig={isBig}
         />
       )}
@@ -38,7 +46,7 @@ export default function Buttons({ current, isBig }) {
         <Button
           to="/pokecard"
           text="PokéCard Scrambler"
-          imgOffset={1.33}
+          imgOffset={1.5}
           isBig={isBig}
         />
       )}
