@@ -25,7 +25,7 @@ const Layout = ({ children, path }) => {
         </div>
         <div className="background"></div>
       </main>
-      <BackgroundMoving path={path} />
+      {/* <BackgroundMoving path={path} /> */}
     </>
   )
 }
