@@ -2,6 +2,7 @@ import React from "react"
 import Buttons from "../components/buttons"
 import GitHubImageLarge from "../components/githubImageLarge"
 import LinkedInImage from "../components/linkedInImage"
+import ProfileImage from "../components/profileImage"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
@@ -25,16 +26,27 @@ const IndexPage = ({ location }) => {
             <LinkedInImage />
           </OutboundLink>
         </div>
-        <div style={{ margin: "30px 0" }}>
-          <h1
-            style={{
-              fontSize: "calc(1.2rem + 3.3vw)",
-              marginBottom: "40px",
-              fontFamily: '"Kodchasan", sans-serif',
-            }}
-          >
-            Hi, I'm Bennett :)
-          </h1>
+        <div style={{ marginBottom: "30px" }}>
+          <div style={{ display: "flex", alignItems: "center" }}>
+            <div
+              style={{
+                width: "9vw",
+                minWidth: "75px",
+                margin: "40px 40px 40px 0",
+              }}
+            >
+              <ProfileImage />
+            </div>
+
+            <h1
+              style={{
+                fontSize: "calc(0.8rem + 2.5vw)",
+                fontFamily: '"Kodchasan", sans-serif',
+              }}
+            >
+              Hi, I'm Bennett :)
+            </h1>
+          </div>
           <div
             style={{
               display: "flex",

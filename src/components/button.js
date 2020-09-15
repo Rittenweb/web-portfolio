@@ -55,14 +55,7 @@ export default function Button({ to, text, imgOffset, isBig }) {
             }}
           />
         </div>
-        <div
-          className="button-text"
-          style={{
-            filter: hasTurbulence ? "blur(0.06em)" : "blur(0.03em)",
-          }}
-        >
-          {text}
-        </div>
+        <div className="button-text">{text}</div>
       </div>
     </Link>
   )
