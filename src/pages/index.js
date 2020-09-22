@@ -9,13 +9,13 @@ import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 const IndexPage = ({ location }) => {
   return (
-    <Layout path={location.pathname}>
+    <Layout>
       <SEO title="Home" />
-      <div
-        className="home-block"
-        // style={{ animation: "fadeIn 2s ease-in" }}
-      >
-        <div style={{ display: "flex" }}>
+      <div className="home-block">
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <div className="profile-image-wrapper">
+            <ProfileImage />
+          </div>
           <OutboundLink href="https://github.com/Rittenweb">
             <GitHubImageLarge />
           </OutboundLink>
@@ -26,27 +26,16 @@ const IndexPage = ({ location }) => {
             <LinkedInImage />
           </OutboundLink>
         </div>
-        <div style={{ marginBottom: "30px" }}>
-          <div style={{ display: "flex", alignItems: "center" }}>
-            <div
-              style={{
-                width: "9vw",
-                minWidth: "75px",
-                margin: "40px 40px 40px 0",
-              }}
-            >
-              <ProfileImage />
-            </div>
-
-            <h1
-              style={{
-                fontSize: "calc(0.8rem + 2.5vw)",
-                fontFamily: '"Kodchasan", sans-serif',
-              }}
-            >
-              Hi, I'm Bennett :)
-            </h1>
-          </div>
+        <div style={{ marginBottom: "20px" }}>
+          <h1
+            style={{
+              fontSize: "calc(1.2rem + 3.0vw)",
+              marginBottom: "40px",
+              fontFamily: '"Kodchasan", sans-serif',
+            }}
+          >
+            Hi, I'm Bennett :)
+          </h1>
           <div
             style={{
               display: "flex",

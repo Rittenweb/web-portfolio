@@ -32,6 +32,8 @@ export default function Project({ title, video, source, live, text }) {
             title={title}
           ></iframe>
         </div>
+        <div className="outline-red"></div>
+        <div className="outline-yellow"></div>
       </div>
       <div className="challenge-block">
         {text.map(pair => {

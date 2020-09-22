@@ -1,32 +1,35 @@
 import React, { useState } from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { Link } from "gatsby"
 
-export default function Button({ to, text, imgOffset, isBig }) {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "160.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 600) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
-
-  const [hasTurbulence, setHasTurbulence] = useState(false)
+export default function Button({ to, text, isBig }) {
+  const [hovering, setHovering] = useState(false)
 
   const handleMouseEnter = function handleMouseEnter(e) {
-    setHasTurbulence(true)
+    setHovering(true)
+    console.log("me")
   }
 
   const handleMouseLeave = function handleMouseLeave(e) {
-    setHasTurbulence(false)
+    setHovering(false)
+  }
+
+  let backgroundClass
+  if (hovering) {
+    if (isBig) {
+      backgroundClass = "button-image button-image-highlight-big"
+    } else {
+      backgroundClass = "button-image button-image-highlight-small"
+    }
+  } else {
+    if (isBig) {
+      backgroundClass = "button-image button-image-nohighlight-big"
+    } else {
+      backgroundClass = "button-image button-image-nohighlight-small"
+    }
   }
 
   return (
-    <Link to={to} style={{ height: "11.11%" }}>
+    <Link to={to} style={{ height: "9%" }}>
       <div
         className="button"
         onMouseEnter={handleMouseEnter}
@@ -36,26 +39,8 @@ export default function Button({ to, text, imgOffset, isBig }) {
           fontSize: isBig ? "calc(0.2rem + 1.1vw)" : "calc(0.7rem + 0.4vw)",
         }}
       >
-        <div
-          className="button-clip"
-          style={{
-            // filter: hasTurbulence ? "url(#lesserturbulence)" : "",
-            clipPath: hasTurbulence
-              ? "polygon(0 0, 100% 0, 100% 100%, 0% 100%)"
-              : isBig
-              ? "polygon(0 0, 50% 0, 60% 100%, 0% 100%)"
-              : "polygon(0 0, 60% 0, 70% 100%, 0% 100%)",
-          }}
-        >
-          <Img
-            fluid={data.placeholderImage.childImageSharp.fluid}
-            style={{
-              width: "110%",
-              transform: `translate(0px, calc(${imgOffset} * var(--imgScaleRatio))`, //x was -10 to mask filter edge, no longer needed
-            }}
-          />
-        </div>
         <div className="button-text">{text}</div>
+        <div className={backgroundClass}></div>
       </div>
     </Link>
   )

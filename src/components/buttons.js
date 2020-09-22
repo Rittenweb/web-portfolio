@@ -4,82 +4,35 @@ import Button from "./button"
 export default function Buttons({ current, isBig }) {
   return (
     <div className={isBig ? "buttons buttons-big" : "buttons buttons-small"}>
-      {current !== "" && (
-        <Button to="/" text="Home" imgOffset={-3} isBig={isBig} />
-      )}
+      {current !== "" && <Button to="/" text="Home" isBig={isBig} />}
       {current !== "about" && (
-        <Button to="/about" text="About Me" imgOffset={-2.25} isBig={isBig} />
+        <Button to="/about" text="About Me" isBig={isBig} />
       )}
       {current !== "fairychess" && (
-        <Button
-          to="/fairychess"
-          text="Fairy Chess"
-          imgOffset={-1.5}
-          isBig={isBig}
-        />
+        <Button to="/fairychess" text="Fairy Chess" isBig={isBig} />
       )}
       {current !== "antiadj" && (
-        <Button
-          to="/antiadj"
-          text="Anti-Adjective Editor"
-          imgOffset={-0.75}
-          isBig={isBig}
-        />
+        <Button to="/antiadj" text="Anti-Adjective Editor" isBig={isBig} />
       )}
       {current !== "iclibrary" && (
-        <Button
-          to="/iclibrary"
-          text="I.C. Library Homepage"
-          imgOffset={0}
-          isBig={isBig}
-        />
+        <Button to="/iclibrary" text="I.C. Library Homepage" isBig={isBig} />
       )}
       {current !== "reviews" && (
-        <Button
-          to="/reviews"
-          text="Flask Book Reviews"
-          imgOffset={0.75}
-          isBig={isBig}
-        />
+        <Button to="/reviews" text="Flask Book Reviews" isBig={isBig} />
       )}
       {current !== "pokecard" && (
-        <Button
-          to="/pokecard"
-          text="PokéCard Scrambler"
-          imgOffset={1.5}
-          isBig={isBig}
-        />
+        <Button to="/pokecard" text="PokéCard Scrambler" isBig={isBig} />
       )}
       {current !== "intimpossible" && (
         <Button
           to="/intimpossible"
           text="Intermediate Impossible"
-          imgOffset={2.25}
           isBig={isBig}
         />
       )}
       {current !== "contact" && (
-        <Button to="/contact" text="Contact Me" imgOffset={3} isBig={isBig} />
+        <Button to="/contact" text="Contact Me" isBig={isBig} />
       )}
-      {/* <svg style={{ position: "fixed", zIndex: -2 }}>
-        <filter id="lesserturbulence" x="0" y="0" width="100%" height="100%">
-          <feTurbulence
-            id="ripple-filter-lesser"
-            numOctaves="3"
-            seed="2"
-            baseFrequency="0.02 0.05"
-          ></feTurbulence>
-          <feDisplacementMap scale="12" in="SourceGraphic"></feDisplacementMap>
-          <animate
-            href="#ripple-filter-lesser"
-            attributeName="baseFrequency"
-            dur="60s"
-            keyTimes="0;0.5;1"
-            values="0.02 0.06;0.04 0.08;0.02 0.06"
-            repeatCount="indefinite"
-          />
-        </filter>
-      </svg> */}
     </div>
   )
 }

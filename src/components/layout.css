@@ -41,6 +41,12 @@ body {
   background: var(--lightblue);
 }
 
+.profile-image-wrapper {
+  width: 9vw;
+  min-width: 70px;
+  margin-right: 20px;
+}
+
 .buttons {
   display: flex;
   flex-direction: column;
@@ -49,12 +55,13 @@ body {
 }
 
 .buttons-small {
-  width: 26vw;
+  width: 24vw;
   height: 70vh;
+  margin-right: 20px;
 }
 
 .buttons-big {
-  width: 36vw;
+  width: 41vw;
   height: 85vh;
 }
 
@@ -62,45 +69,103 @@ body {
   width: 97.5%;
   height: 100%;
   background: transparent;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  border-left: 1px solid white;
-  box-shadow: inset 10px 1px 8px white;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
-.button:hover {
-  transform: scale(1.05);
-}
-
-.button-clip {
-  background: linear-gradient(145deg, var(--darkblue), var(--lightblue));
+.button-image {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  transition: clip-path 200ms;
-  outline: 2px solid white;
+  opacity: 0.5;
+}
+
+.button-image-nohighlight-big {
+  background: url("../images/glyphblack.png");
+  background-size: 41vw;
+  background-attachment: fixed;
+  background-position: -23vw;
+}
+
+.button-image-nohighlight-small {
+  background: url("../images/glyphblack.png");
+  background-size: 38vw;
+  background-attachment: fixed;
+  background-position: -9vw;
+}
+
+.button-image-highlight-big {
+  animation: blinkBig 2000ms ease-in infinite;
+}
+
+.button-image-highlight-small {
+  animation: blinkSmall 2000ms ease-in infinite;
+}
+
+@keyframes blinkBig {
+  0% {
+    background: url("../images/glyphblack.png");
+    background-size: 41vw;
+    background-attachment: fixed;
+    background-position: -23vw;
+  }
+  50% {
+    background: url("../images/glyphblue.png");
+    background-size: 41vw;
+    background-attachment: fixed;
+    background-position: -23vw;
+  }
+  100% {
+    background: url("../images/glyphblack.png");
+    background-size: 41vw;
+    background-attachment: fixed;
+    background-position: -23vw;
+  }
+}
+
+@keyframes blinkSmall {
+  0% {
+    background: url("../images/glyphblack.png");
+    background-size: 38vw;
+    background-attachment: fixed;
+    background-position: -9vw;
+  }
+  50% {
+    background: url("../images/glyphblue.png");
+    background-size: 38vw;
+    background-attachment: fixed;
+    background-position: -9vw;
+  }
+  100% {
+    background: url("../images/glyphblack.png");
+    background-size: 38vw;
+    background-attachment: fixed;
+    background-position: -9vw;
+  }
 }
 
 .button-text {
   position: absolute;
   top: 0;
   left: 0;
-  width: 60%;
+  width: 100%;
   height: 100%;
+  z-index: 2;
   color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
+  text-align: center;
   display: flex;
   align-items: center;
-  padding-left: 16px;
-  font-family: "Play", sans-serif;
-  font-weight: 700;
+  justify-content: center;
+  font-family: "Kodchasan", sans-serif;
 }
 
 .home-block {
   margin-left: 7.5vw;
-  height: 75vh;
+  height: 80vh;
   max-width: 60vw;
   display: flex;
   flex-direction: column;
@@ -190,15 +255,39 @@ textarea:-webkit-autofill:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 70vw;
+  width: 72vw;
 }
 
 .video-block {
-  background: linear-gradient(145deg, var(--darkblue), var(--lightblue));
-  box-shadow: 10px 10px 0px var(--yellow), -10px -10px 0px var(--red);
+  position: relative;
+  border-left: 2px solid var(--darkblue);
+  border-top: 2px solid var(--darkblue);
+  border-right: 2px solid var(--lightblue);
+  border-bottom: 2px solid var(--lightblue);
   margin-left: 2.75vw;
-  padding: 1vw;
+  padding: 2vw;
   max-width: 32vw;
+  z-index: 2;
+}
+
+.outline-red {
+  position: absolute;
+  border: 2px solid var(--red);
+  top: -8px;
+  left: -8px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.outline-yellow {
+  position: absolute;
+  border: 2px solid var(--yellow);
+  top: 5px;
+  left: 5px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 .video-header {
@@ -285,7 +374,7 @@ iframe {
 }
 
 .orange-box {
-  padding: 6px;
+  padding: 6px 8px 6px 4px;
   margin: 4px;
   display: flex;
   align-items: center;
@@ -303,10 +392,8 @@ iframe {
   background-size: 100% 2px;
   background-position: 0 0, 0 100%;
   background-repeat: no-repeat;
-  font-family: "Play", sans-serif;
+  font-family: "Kodchasan", sans-serif;
   text-decoration: none;
-
-  font-weight: 700;
 }
 
 .gradient-text {
@@ -350,6 +437,7 @@ iframe {
   height: calc(100vh - 2vw);
   width: 98vw;
   z-index: -1;
+  box-shadow: 0 0 12px black;
 }
 
 .red {
@@ -446,6 +534,9 @@ h1 {
 }
 
 @media (max-width: 1000px) {
+  .profile-image-wrapper {
+    margin-right: 15px;
+  }
   .skills-and-resume {
     flex-direction: column;
   }
