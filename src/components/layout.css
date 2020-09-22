@@ -131,6 +131,7 @@ body {
     background-size: 41vw;
     background-attachment: fixed;
     background-position: -23vw;
+    opacity: 1;
   }
   100% {
     background: url("../images/glyphblackcompress.png");
@@ -152,6 +153,7 @@ body {
     background-size: 38vw;
     background-attachment: fixed;
     background-position: -9vw;
+    opacity: 1;
   }
   100% {
     background: url("../images/glyphblackcompress.png");
