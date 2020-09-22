@@ -31,10 +31,6 @@ module.exports = {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
         fonts: [{
-            family: `Play`,
-            variants: ['700']
-          },
-          {
             family: `Gayathri`,
             variants: ['400']
           },
