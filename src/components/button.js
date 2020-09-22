@@ -6,7 +6,6 @@ export default function Button({ to, text, isBig }) {
 
   const handleMouseEnter = function handleMouseEnter(e) {
     setHovering(true)
-    console.log("me")
   }
 
   const handleMouseLeave = function handleMouseLeave(e) {
@@ -41,6 +40,13 @@ export default function Button({ to, text, isBig }) {
       >
         <div className="button-text">{text}</div>
         <div className={backgroundClass}></div>
+        <div
+          className={
+            isBig
+              ? "button-image button-image-nohighlight-big-backup"
+              : "button-image button-image-nohighlight-small-backup"
+          }
+        ></div>
       </div>
     </Link>
   )

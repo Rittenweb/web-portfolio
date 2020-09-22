@@ -80,17 +80,32 @@ body {
   width: 100%;
   height: 100%;
   opacity: 0.5;
+  transition: background 1s;
 }
 
 .button-image-nohighlight-big {
-  background: url("../images/glyphblack.png");
+  background: url("../images/glyphblackcompress.png");
+  background-size: 41vw;
+  background-attachment: fixed;
+  background-position: -23vw;
+}
+
+.button-image-nohighlight-big-backup {
+  background: url("../images/glyphblackcompress.png");
   background-size: 41vw;
   background-attachment: fixed;
   background-position: -23vw;
 }
 
 .button-image-nohighlight-small {
-  background: url("../images/glyphblack.png");
+  background: url("../images/glyphblackcompress.png");
+  background-size: 38vw;
+  background-attachment: fixed;
+  background-position: -9vw;
+}
+
+.button-image-nohighlight-small-backup {
+  background: url("../images/glyphblackcompress.png");
   background-size: 38vw;
   background-attachment: fixed;
   background-position: -9vw;
@@ -106,19 +121,19 @@ body {
 
 @keyframes blinkBig {
   0% {
-    background: url("../images/glyphblack.png");
+    background: url("../images/glyphblackcompress.png");
     background-size: 41vw;
     background-attachment: fixed;
     background-position: -23vw;
   }
   50% {
-    background: url("../images/glyphblue.png");
+    background: url("../images/glyphbluecompress.png");
     background-size: 41vw;
     background-attachment: fixed;
     background-position: -23vw;
   }
   100% {
-    background: url("../images/glyphblack.png");
+    background: url("../images/glyphblackcompress.png");
     background-size: 41vw;
     background-attachment: fixed;
     background-position: -23vw;
@@ -127,19 +142,19 @@ body {
 
 @keyframes blinkSmall {
   0% {
-    background: url("../images/glyphblack.png");
+    background: url("../images/glyphblackcompress.png");
     background-size: 38vw;
     background-attachment: fixed;
     background-position: -9vw;
   }
   50% {
-    background: url("../images/glyphblue.png");
+    background: url("../images/glyphbluecompress.png");
     background-size: 38vw;
     background-attachment: fixed;
     background-position: -9vw;
   }
   100% {
-    background: url("../images/glyphblack.png");
+    background: url("../images/glyphblackcompress.png");
     background-size: 38vw;
     background-attachment: fixed;
     background-position: -9vw;
