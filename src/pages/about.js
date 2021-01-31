@@ -51,14 +51,6 @@ const AboutPage = () => (
             architecting React components and state for maintainability,
             extensibility, and efficient rendering.
           </div>
-          <div className="about-text">
-            I'm looking for a team where I can contribute immediately, but just
-            as importantly, one where I'll be pushed to improve by learning
-            better practices, more technologies, more difficult patterns, and
-            more truths about the industry. A strong code review culture would
-            be great. If you read all this, wow, that's pretty cool of you! I'd
-            love to work with you! Contact me, and thanks for reading :)
-          </div>
         </div>
       </div>
       <div className="skills-and-resume">
